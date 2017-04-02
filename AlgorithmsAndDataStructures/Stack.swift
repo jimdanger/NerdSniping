@@ -26,20 +26,11 @@ class Stack {
         head = node
     }
     
-    
     func peak () -> T? {
         return head?.data
     }
     
-    
     func isEmpty () -> Bool {
-        if head == nil {
-            return true
-        } else {
-            return false
-        }
+        return head == nil ? true : false
     }
-    
-    
-    
 }
