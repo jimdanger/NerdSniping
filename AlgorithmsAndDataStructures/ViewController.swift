@@ -12,9 +12,9 @@ class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
-        
+        print("Run and explore the Unit Tests to see the logic run.")
+    
     }
 
     override var representedObject: Any? {

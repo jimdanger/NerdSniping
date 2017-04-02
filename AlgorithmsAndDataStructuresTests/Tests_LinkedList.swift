@@ -11,7 +11,6 @@ import XCTest
 
 class Tests_LinkedList: XCTestCase {
 
-
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -45,7 +44,6 @@ class Tests_LinkedList: XCTestCase {
         XCTAssert(list.popHead() == "one")
     }
 
-    
     func testRemoveNodeThatHasCertainData() {
         let list: LinkedList = LinkedList()
         list.save(data: "one")
@@ -60,5 +58,23 @@ class Tests_LinkedList: XCTestCase {
         }
         let expectedArray = ["five","four", "three", "one"]
         XCTAssert(array == expectedArray)
+    }
+    
+    func testNotfound () {
+        let list: LinkedList = LinkedList()
+        list.save(data: "one")
+        list.save(data: "two")
+        
+        let nodeExpectedToBeNil = list.get(data: "three")
+        XCTAssert(nodeExpectedToBeNil == nil)
+    }
+    
+    func testFound () {
+        let list: LinkedList = LinkedList()
+        list.save(data: "one")
+        list.save(data: "two")
+        
+        let node = list.get(data: "two")
+        XCTAssert(node?.data == "two")
     }
 }
