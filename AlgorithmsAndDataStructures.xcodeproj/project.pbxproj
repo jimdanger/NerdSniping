@@ -11,8 +11,10 @@
 		3881AE831E9150E900FCB71F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881AE821E9150E900FCB71F /* ViewController.swift */; };
 		3881AE851E9150E900FCB71F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3881AE841E9150E900FCB71F /* Assets.xcassets */; };
 		3881AE881E9150E900FCB71F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3881AE861E9150E900FCB71F /* Main.storyboard */; };
-		3881AE931E9150E900FCB71F /* AlgorithmsAndDataStructuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881AE921E9150E900FCB71F /* AlgorithmsAndDataStructuresTests.swift */; };
 		3881AE9E1E9150E900FCB71F /* AlgorithmsAndDataStructuresUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881AE9D1E9150E900FCB71F /* AlgorithmsAndDataStructuresUITests.swift */; };
+		3881AEAC1E91511D00FCB71F /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881AEAB1E91511D00FCB71F /* LinkedList.swift */; };
+		3881AEAE1E91513B00FCB71F /* LinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881AEAD1E91513B00FCB71F /* LinkedListNode.swift */; };
+		3881AEB21E9157CB00FCB71F /* Tests_LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881AEB11E9157CB00FCB71F /* Tests_LinkedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +42,13 @@
 		3881AE871E9150E900FCB71F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3881AE891E9150E900FCB71F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3881AE8E1E9150E900FCB71F /* AlgorithmsAndDataStructuresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmsAndDataStructuresTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3881AE921E9150E900FCB71F /* AlgorithmsAndDataStructuresTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsAndDataStructuresTests.swift; sourceTree = "<group>"; };
 		3881AE941E9150E900FCB71F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3881AE991E9150E900FCB71F /* AlgorithmsAndDataStructuresUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmsAndDataStructuresUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3881AE9D1E9150E900FCB71F /* AlgorithmsAndDataStructuresUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsAndDataStructuresUITests.swift; sourceTree = "<group>"; };
 		3881AE9F1E9150E900FCB71F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3881AEAB1E91511D00FCB71F /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		3881AEAD1E91513B00FCB71F /* LinkedListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedListNode.swift; sourceTree = "<group>"; };
+		3881AEB11E9157CB00FCB71F /* Tests_LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests_LinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 			children = (
 				3881AE801E9150E900FCB71F /* AppDelegate.swift */,
 				3881AE821E9150E900FCB71F /* ViewController.swift */,
+				3881AEAF1E91514800FCB71F /* CommonLogic */,
 				3881AE841E9150E900FCB71F /* Assets.xcassets */,
 				3881AE861E9150E900FCB71F /* Main.storyboard */,
 				3881AE891E9150E900FCB71F /* Info.plist */,
@@ -107,7 +112,7 @@
 		3881AE911E9150E900FCB71F /* AlgorithmsAndDataStructuresTests */ = {
 			isa = PBXGroup;
 			children = (
-				3881AE921E9150E900FCB71F /* AlgorithmsAndDataStructuresTests.swift */,
+				3881AEB11E9157CB00FCB71F /* Tests_LinkedList.swift */,
 				3881AE941E9150E900FCB71F /* Info.plist */,
 			);
 			path = AlgorithmsAndDataStructuresTests;
@@ -120,6 +125,23 @@
 				3881AE9F1E9150E900FCB71F /* Info.plist */,
 			);
 			path = AlgorithmsAndDataStructuresUITests;
+			sourceTree = "<group>";
+		};
+		3881AEAF1E91514800FCB71F /* CommonLogic */ = {
+			isa = PBXGroup;
+			children = (
+				3881AEB01E91516200FCB71F /* LinkedList */,
+			);
+			name = CommonLogic;
+			sourceTree = "<group>";
+		};
+		3881AEB01E91516200FCB71F /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				3881AEAB1E91511D00FCB71F /* LinkedList.swift */,
+				3881AEAD1E91513B00FCB71F /* LinkedListNode.swift */,
+			);
+			name = LinkedList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3881AEAE1E91513B00FCB71F /* LinkedListNode.swift in Sources */,
+				3881AEAC1E91511D00FCB71F /* LinkedList.swift in Sources */,
 				3881AE831E9150E900FCB71F /* ViewController.swift in Sources */,
 				3881AE811E9150E900FCB71F /* AppDelegate.swift in Sources */,
 			);
@@ -267,7 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3881AE931E9150E900FCB71F /* AlgorithmsAndDataStructuresTests.swift in Sources */,
+				3881AEB21E9157CB00FCB71F /* Tests_LinkedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +531,7 @@
 				3881AEA41E9150E900FCB71F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3881AEA51E9150E900FCB71F /* Build configuration list for PBXNativeTarget "AlgorithmsAndDataStructuresTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +540,7 @@
 				3881AEA71E9150E900FCB71F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3881AEA81E9150E900FCB71F /* Build configuration list for PBXNativeTarget "AlgorithmsAndDataStructuresUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +549,7 @@
 				3881AEAA1E9150E900FCB71F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
