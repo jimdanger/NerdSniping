@@ -13,7 +13,7 @@ public class LinkedList {
     
     
     func save(data: T) {
-        addNodeAsNewHead(node: LinkedListNode(data: data))
+        addNodeAtEnd(node: LinkedListNode(data: data))
     }
     
     func get(data: T) -> LinkedListNode? {
@@ -48,6 +48,19 @@ public class LinkedList {
     private func addNodeAsNewHead(node: LinkedListNode) {
         node.nextNode = headNode
         self.headNode = node
+    }
+    
+    private func addNodeAtEnd(node: LinkedListNode) {
+        
+        if headNode == nil {
+            headNode = node
+            return
+        }
+        var nodeInFocus = headNode
+        while nodeInFocus?.nextNode != nil{
+            nodeInFocus = nodeInFocus?.nextNode
+        }
+        nodeInFocus?.nextNode = node
     }
     
     func findNode(data: T) -> LinkedListNode? {

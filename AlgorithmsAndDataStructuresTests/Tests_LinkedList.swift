@@ -33,6 +33,7 @@ class Tests_LinkedList: XCTestCase {
         let list: LinkedList = LinkedList()
         list.save(data: "one")
         list.save(data: "two")
+        let _ = list.popHead()
         XCTAssert(list.popHead() == "two")
     }
     
@@ -41,7 +42,7 @@ class Tests_LinkedList: XCTestCase {
         list.save(data: "one")
         list.save(data: "two")
         let _ = list.popHead()
-        XCTAssert(list.popHead() == "one")
+        XCTAssert(list.popHead() == "two")
     }
 
     func testRemoveNodeThatHasCertainData() {
@@ -56,7 +57,8 @@ class Tests_LinkedList: XCTestCase {
         while list.headNode != nil {
             array.append(list.popHead()!)
         }
-        let expectedArray = ["five","four", "three", "one"]
+        let expectedArray = ["one","three", "four", "five"]
+        
         XCTAssert(array == expectedArray)
     }
     

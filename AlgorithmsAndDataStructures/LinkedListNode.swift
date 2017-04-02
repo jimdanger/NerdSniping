@@ -7,13 +7,12 @@
 //
 
 class LinkedListNode {
-    typealias T = String
+    typealias T = String 
 
     var data: T?
     var nextNode: LinkedListNode?
     
     init (data: T) {
-        
         self.data = data
     }
     
