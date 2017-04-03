@@ -22,6 +22,7 @@
 		3881AEC21E917D3000FCB71F /* Tests_Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881AEC11E917D3000FCB71F /* Tests_Queue.swift */; };
 		3881AEC61E91BCFC00FCB71F /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881AEC51E91BCFC00FCB71F /* BinarySearchTree.swift */; };
 		3881AEC91E92A16100FCB71F /* Tests_BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881AEC81E92A16100FCB71F /* Tests_BinarySearchTree.swift */; };
+		3881AECB1E92DABF00FCB71F /* LargeArrayOfRandomIntegers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881AECA1E92DABF00FCB71F /* LargeArrayOfRandomIntegers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		3881AEC11E917D3000FCB71F /* Tests_Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests_Queue.swift; sourceTree = "<group>"; };
 		3881AEC51E91BCFC00FCB71F /* BinarySearchTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		3881AEC81E92A16100FCB71F /* Tests_BinarySearchTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests_BinarySearchTree.swift; sourceTree = "<group>"; };
+		3881AECA1E92DABF00FCB71F /* LargeArrayOfRandomIntegers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeArrayOfRandomIntegers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				3881AEBA1E9176D700FCB71F /* Tests_Stack.swift */,
 				3881AEC11E917D3000FCB71F /* Tests_Queue.swift */,
 				3881AEC81E92A16100FCB71F /* Tests_BinarySearchTree.swift */,
+				3881AECA1E92DABF00FCB71F /* LargeArrayOfRandomIntegers.swift */,
 				3881AE941E9150E900FCB71F /* Info.plist */,
 			);
 			path = AlgorithmsAndDataStructuresTests;
@@ -344,6 +347,7 @@
 				3881AEC91E92A16100FCB71F /* Tests_BinarySearchTree.swift in Sources */,
 				3881AEBB1E9176D700FCB71F /* Tests_Stack.swift in Sources */,
 				3881AEB21E9157CB00FCB71F /* Tests_LinkedList.swift in Sources */,
+				3881AECB1E92DABF00FCB71F /* LargeArrayOfRandomIntegers.swift in Sources */,
 				3881AEC21E917D3000FCB71F /* Tests_Queue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

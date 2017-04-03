@@ -24,32 +24,12 @@ class BinarySearchTree {
     
     var root: BstNode?
     
-    func breadthFirstSearch(start: BstNode, target: Int) -> BstNode? {
-        
-        
-        
-        return nil
+    func getRootValue() -> Int? {
+        return root?.value
     }
-    
-    func depthFirstSearch(start: BstNode, target: Int) -> BstNode? {
 
-        if start.value == target {
-            return start
-        }
-        
-        if target < start.value {
-            if let leftChild = start.left {
-                return depthFirstSearch(start: leftChild, target: target)
-            }
-        } else {
-            if let rightChild = start.right {
-                return depthFirstSearch(start: rightChild, target: target)
-            }
-        }
-        return nil
-    }
     
-    
+    // MARK:- Put
     func put (value: Int) {
         let newNode = BstNode(value: value)
         guard let unwrappedRoot = root else {
@@ -77,8 +57,97 @@ class BinarySearchTree {
         }
     }
     
-    func getRootValue() -> Int? {
-        return root?.value
+
+    // MARK:- Searches
+    func breadthFirstSearch(start: BstNode, target: Int) -> BstNode? {
+        
+        let queue = BreadthFirstSearchQueue()
+        queue.add(data: start)
+        
+        while !queue.isEmpty() {
+            let nextNode = queue.peakAndRemove()
+            if nextNode?.value == target {
+                return nextNode
+            } else {
+                if let leftChild = nextNode?.left {
+                    queue.add(data: leftChild)
+                }
+                if let rightChild = nextNode?.right {
+                    queue.add(data: rightChild)
+                }
+            }
+        }
+        return nil
     }
+    
+    // Ideally one could reuse Queue.swift. Here, I wanted to practice coding this out.
+    
+    public class BreadthFirstSearchQueue { // this could be private, but I wanted to test it easily.
+        
+        private class BFSQueueNode {
+            var data: BstNode
+            var next: BFSQueueNode?
+            init (data: BstNode) {
+                self.data = data
+            }
+        }
+        
+        private var head: BFSQueueNode?
+        func add(data: BstNode) {
+            let nodeToAdd = BFSQueueNode(data: data)
+            
+            if head == nil {
+                head = nodeToAdd
+            } else {
+                var nodeInFocus = head
+                while nodeInFocus?.next != nil {
+                    nodeInFocus = nodeInFocus?.next
+                }
+                nodeInFocus?.next = nodeToAdd
+            }
+            
+        }
+        
+        func peakAndRemove() -> BstNode? {
+            let nodeToReturn = head
+            head = nodeToReturn?.next
+            return nodeToReturn?.data
+        }
+        
+        func isEmpty() -> Bool {
+            if head == nil {
+                return true
+            } else{
+                return false
+            }
+        }
+    }
+    
+    
+    
+    func depthFirstSearch(start: BstNode, target: Int) -> BstNode? {
+
+        if start.value == target {
+            return start
+        }
+        
+        if target < start.value {
+            if let leftChild = start.left {
+                return depthFirstSearch(start: leftChild, target: target)
+            }
+        } else {
+            if let rightChild = start.right {
+                return depthFirstSearch(start: rightChild, target: target)
+            }
+        }
+        return nil
+    }
+    
+    // MARK:- Traverses
+        // ...
+    
+    
+    
+
     
 }

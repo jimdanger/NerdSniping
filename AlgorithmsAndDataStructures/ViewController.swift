@@ -13,8 +13,8 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("Run and explore the Unit Tests to see the logic run.")
-    
+//        print("Run and explore the Unit Tests to see the logic run.")
+        printLargeArrayToConsole()
     }
 
     override var representedObject: Any? {
@@ -23,6 +23,15 @@ class ViewController: NSViewController {
         }
     }
     
-    
+    func printLargeArrayToConsole(){
+        
+        var stringToPrint = ""
+        stringToPrint.append("[")
+        for _ in 0...100000 {
+           stringToPrint.append("\((arc4random_uniform(100000) + 1)), ")
+        }
+        stringToPrint.append("]")
+        print(stringToPrint)
+    }
 }
 

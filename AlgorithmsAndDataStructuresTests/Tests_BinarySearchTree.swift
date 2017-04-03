@@ -84,12 +84,7 @@ class Tests_BinarySearchTree: XCTestCase {
         bst.put(value: 1) // left child of 2
     }
     
-    // MARK: - Breadth First Search
-    
-    func testBreadthFirstSearch() {
-        
-    }
-    
+
     // MARK: - Depth First Search
     func testDepthFirstSearchStartMatchesTarget() {
         let bst = BinarySearchTree()
@@ -129,7 +124,7 @@ class Tests_BinarySearchTree: XCTestCase {
     func testHugeBstDfs() {
         let bst = BinarySearchTree()
         
-        self.putTonsOfStuff(bst: bst, size: 1000)
+        self.putTonsOfStuff(bst: bst, size: 100000)
         
         bst.put(value: 9999) // to ensure this test will pass
         var resultNode = bst.root
@@ -145,12 +140,113 @@ class Tests_BinarySearchTree: XCTestCase {
     }
     
     func putTonsOfStuff(bst: BinarySearchTree, size: Int) {
-        for _ in 0...size {
-            bst.put(value: Int(arc4random_uniform(10000) + 1))
+//        for _ in 0...size {
+//            bst.put(value: Int(arc4random_uniform(100000) + 1))
+//        }
+        
+        for element in LargeArrayOfRandomIntegers.instance {
+            bst.put(value: element)
         }
+        
+        
+    }
+    
+    
+    // MARK:- Breadth First Search Queue (Needed for search itself)
+    func testisEmpty() {
+        let queue = BinarySearchTree.BreadthFirstSearchQueue()
+        XCTAssert(queue.isEmpty() == true)
+    }
+    
+    func testIsNotEmpty() {
+        let queue = BinarySearchTree.BreadthFirstSearchQueue()
+        let bstNode = BinarySearchTree.BstNode(value: 1)
+        queue.add(data: bstNode)
+        XCTAssert(queue.isEmpty() == false)
+    }
+    
+    func testAdd() {
+        let queue = BinarySearchTree.BreadthFirstSearchQueue()
+        let bstNode = BinarySearchTree.BstNode(value: 1)
+        queue.add(data: bstNode)
+        XCTAssert(queue.peakAndRemove()?.value == 1)
+    }
+    
+    func testNilPeak() {
+        let queue = BinarySearchTree.BreadthFirstSearchQueue()
+        XCTAssert(queue.peakAndRemove() == nil)
+    }
+    
+    func testThatQueueAddsToEnd(){
+        let queue = BinarySearchTree.BreadthFirstSearchQueue()
+        queue.add(data: BinarySearchTree.BstNode(value: 1))
+        queue.add(data: BinarySearchTree.BstNode(value: 2))
+        XCTAssert(queue.peakAndRemove()?.value == 1)
+    }
+    
+    func testRemove() {
+        let queue = BinarySearchTree.BreadthFirstSearchQueue()
+        queue.add(data: BinarySearchTree.BstNode(value: 1))
+        queue.add(data: BinarySearchTree.BstNode(value: 2))
+        queue.add(data: BinarySearchTree.BstNode(value: 3))
+        queue.add(data: BinarySearchTree.BstNode(value: 4))
+        let _ = queue.peakAndRemove()
+        XCTAssert(queue.peakAndRemove()?.value == 2)
+    }
+    
+    
+    // MARK:- Breadth First Search
+    
+    func testBreadthFirstSearchStartMatchesTarget() {
+        let bst = BinarySearchTree()
+        bst.put(value: 5)
+        let result = bst.breadthFirstSearch(start: bst.root!, target: 5)?.value
+        XCTAssertEqual(result, 5)
+    }
+    
+    func testBreadthFirstSearchStartMatchesTargetNotEqual() {
+        let bst = BinarySearchTree()
+        bst.put(value: 5)
+        let result = bst.breadthFirstSearch(start: bst.root!, target: 5)?.value
+        XCTAssertNotEqual(result, 3)
+    }
+    
+    func testBreadthFirstSearch() {
+        let bst = BinarySearchTree()
+        putStuff(bst: bst)
+        let resultNode = bst.breadthFirstSearch(start: bst.root!, target: 1)
+        XCTAssertEqual(resultNode?.value, 1)
+    }
+    
+    func testBreadthFirstSearch2() {
+        let bst = BinarySearchTree()
+        putStuff(bst: bst)
+        let resultNode = bst.breadthFirstSearch(start: bst.root!, target: 8)
+        XCTAssertEqual(resultNode?.value, 8)
+    }
+    
+    func testBreadthFirstSearchNotFound() {
+        let bst = BinarySearchTree()
+        putStuff(bst: bst)
+        let resultNode = bst.breadthFirstSearch(start: bst.root!, target: 20)
+        XCTAssertEqual(resultNode?.value, nil)
+    }
+    
+    func testHugeBstBfs() {
+        let bst = BinarySearchTree()
+        
+        self.putTonsOfStuff(bst: bst, size: 100000)
+        
+        bst.put(value: 9999) // to ensure this test will pass
+        var resultNode = bst.root
+        self.measure {
+            resultNode = bst.breadthFirstSearch(start: bst.root!, target: 9999)
+        }
+        XCTAssertEqual(resultNode?.value, 9999)
     }
 
-    
-    
 
+    
+    
+    
 }
