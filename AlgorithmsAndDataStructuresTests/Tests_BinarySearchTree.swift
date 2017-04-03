@@ -124,14 +124,15 @@ class Tests_BinarySearchTree: XCTestCase {
     func testHugeBstDfs() {
         let bst = BinarySearchTree()
         
-        self.putTonsOfStuff(bst: bst, size: 100000)
+        self.putTonsOfStuff(bst: bst)
         
-        bst.put(value: 9999) // to ensure this test will pass
+        let value = Int((arc4random_uniform(10000) + 1))
+        bst.put(value: value) // to ensure this test will pass
         var resultNode = bst.root
         self.measure {
-            resultNode = bst.depthFirstSearch(start: bst.root!, target: 9999)
+            resultNode = bst.depthFirstSearch(start: bst.root!, target: value)
         }
-        XCTAssertEqual(resultNode?.value, 9999)
+        XCTAssertEqual(resultNode?.value, value)
     }
     
     func testPerformanceExample() {
@@ -139,16 +140,11 @@ class Tests_BinarySearchTree: XCTestCase {
         
     }
     
-    func putTonsOfStuff(bst: BinarySearchTree, size: Int) {
-//        for _ in 0...size {
-//            bst.put(value: Int(arc4random_uniform(100000) + 1))
-//        }
-        
-        for element in LargeArrayOfRandomIntegers.instance {
+    func putTonsOfStuff(bst: BinarySearchTree) {
+
+        for element in LargeArrayOfRandomInt.instance {
             bst.put(value: element)
         }
-        
-        
     }
     
     
@@ -235,7 +231,7 @@ class Tests_BinarySearchTree: XCTestCase {
     func testHugeBstBfs() {
         let bst = BinarySearchTree()
         
-        self.putTonsOfStuff(bst: bst, size: 100000)
+        self.putTonsOfStuff(bst: bst)
         
         bst.put(value: 9999) // to ensure this test will pass
         var resultNode = bst.root

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38076D121E92DFD9002764B8 /* LargeArrayOfRandomInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38076D111E92DFD9002764B8 /* LargeArrayOfRandomInt.swift */; };
 		3881AE811E9150E900FCB71F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881AE801E9150E900FCB71F /* AppDelegate.swift */; };
 		3881AE831E9150E900FCB71F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881AE821E9150E900FCB71F /* ViewController.swift */; };
 		3881AE851E9150E900FCB71F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3881AE841E9150E900FCB71F /* Assets.xcassets */; };
@@ -22,7 +23,6 @@
 		3881AEC21E917D3000FCB71F /* Tests_Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881AEC11E917D3000FCB71F /* Tests_Queue.swift */; };
 		3881AEC61E91BCFC00FCB71F /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881AEC51E91BCFC00FCB71F /* BinarySearchTree.swift */; };
 		3881AEC91E92A16100FCB71F /* Tests_BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881AEC81E92A16100FCB71F /* Tests_BinarySearchTree.swift */; };
-		3881AECB1E92DABF00FCB71F /* LargeArrayOfRandomIntegers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881AECA1E92DABF00FCB71F /* LargeArrayOfRandomIntegers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38076D111E92DFD9002764B8 /* LargeArrayOfRandomInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeArrayOfRandomInt.swift; sourceTree = "<group>"; };
 		3881AE7D1E9150E900FCB71F /* AlgorithmsAndDataStructures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlgorithmsAndDataStructures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3881AE801E9150E900FCB71F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3881AE821E9150E900FCB71F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +65,6 @@
 		3881AEC11E917D3000FCB71F /* Tests_Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests_Queue.swift; sourceTree = "<group>"; };
 		3881AEC51E91BCFC00FCB71F /* BinarySearchTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		3881AEC81E92A16100FCB71F /* Tests_BinarySearchTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests_BinarySearchTree.swift; sourceTree = "<group>"; };
-		3881AECA1E92DABF00FCB71F /* LargeArrayOfRandomIntegers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeArrayOfRandomIntegers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +132,7 @@
 				3881AEBA1E9176D700FCB71F /* Tests_Stack.swift */,
 				3881AEC11E917D3000FCB71F /* Tests_Queue.swift */,
 				3881AEC81E92A16100FCB71F /* Tests_BinarySearchTree.swift */,
-				3881AECA1E92DABF00FCB71F /* LargeArrayOfRandomIntegers.swift */,
+				38076D111E92DFD9002764B8 /* LargeArrayOfRandomInt.swift */,
 				3881AE941E9150E900FCB71F /* Info.plist */,
 			);
 			path = AlgorithmsAndDataStructuresTests;
@@ -346,8 +346,8 @@
 			files = (
 				3881AEC91E92A16100FCB71F /* Tests_BinarySearchTree.swift in Sources */,
 				3881AEBB1E9176D700FCB71F /* Tests_Stack.swift in Sources */,
+				38076D121E92DFD9002764B8 /* LargeArrayOfRandomInt.swift in Sources */,
 				3881AEB21E9157CB00FCB71F /* Tests_LinkedList.swift in Sources */,
-				3881AECB1E92DABF00FCB71F /* LargeArrayOfRandomIntegers.swift in Sources */,
 				3881AEC21E917D3000FCB71F /* Tests_Queue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
