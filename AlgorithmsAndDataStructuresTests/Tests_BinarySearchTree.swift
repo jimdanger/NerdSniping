@@ -232,17 +232,13 @@ class Tests_BinarySearchTree: XCTestCase {
         let bst = BinarySearchTree()
         
         self.putTonsOfStuff(bst: bst)
-        
-        bst.put(value: 9999) // to ensure this test will pass
+        let value = Int((arc4random_uniform(10000) + 1))
+        bst.put(value: value) // to ensure this test will pass
         var resultNode = bst.root
         self.measure {
-            resultNode = bst.breadthFirstSearch(start: bst.root!, target: 9999)
+            resultNode = bst.breadthFirstSearch(start: bst.root!, target: value)
         }
-        XCTAssertEqual(resultNode?.value, 9999)
+        XCTAssertEqual(resultNode?.value, value)
     }
 
-
-    
-    
-    
 }
