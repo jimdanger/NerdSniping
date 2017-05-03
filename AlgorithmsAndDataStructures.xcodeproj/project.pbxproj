@@ -222,10 +222,7 @@
 		38F47D7E1EB3A52800DC7B15 /* Kata04DataMunging */ = {
 			isa = PBXGroup;
 			children = (
-				38F47D7F1EB3A59900DC7B15 /* weather.dat */,
-				38F47D851EB951EB00DC7B15 /* PartOneWeatherData.swift */,
-				38F47D871EB951F500DC7B15 /* FileReader */,
-				38F47D8E1EBA59DC00DC7B15 /* Kata04WeatherModels */,
+				38F47D8F1EBA5A8700DC7B15 /* PartOne_Weather */,
 			);
 			name = Kata04DataMunging;
 			sourceTree = "<group>";
@@ -246,6 +243,17 @@
 				38F47D8C1EB95AC800DC7B15 /* Kata04Temp.swift */,
 			);
 			name = Kata04WeatherModels;
+			sourceTree = "<group>";
+		};
+		38F47D8F1EBA5A8700DC7B15 /* PartOne_Weather */ = {
+			isa = PBXGroup;
+			children = (
+				38F47D7F1EB3A59900DC7B15 /* weather.dat */,
+				38F47D851EB951EB00DC7B15 /* PartOneWeatherData.swift */,
+				38F47D871EB951F500DC7B15 /* FileReader */,
+				38F47D8E1EBA59DC00DC7B15 /* Kata04WeatherModels */,
+			);
+			name = PartOne_Weather;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
