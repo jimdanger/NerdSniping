@@ -17,6 +17,8 @@ class ViewController: NSViewController {
         print("")
         print("Other than the Unit Tests, this app doesn nothing.")
         
+        doSomethingElse()
+        
     }
 
     override var representedObject: Any? {
@@ -24,5 +26,10 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
+    
+    func doSomethingElse() {
+    
+      // temporary playground.  
+    }
+    
 }
-

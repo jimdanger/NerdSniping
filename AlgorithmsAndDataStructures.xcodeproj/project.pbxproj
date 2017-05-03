@@ -23,6 +23,14 @@
 		3881AEC21E917D3000FCB71F /* Tests_Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881AEC11E917D3000FCB71F /* Tests_Queue.swift */; };
 		3881AEC61E91BCFC00FCB71F /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881AEC51E91BCFC00FCB71F /* BinarySearchTree.swift */; };
 		3881AEC91E92A16100FCB71F /* Tests_BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881AEC81E92A16100FCB71F /* Tests_BinarySearchTree.swift */; };
+		38F47D7A1EB3A41000DC7B15 /* Kata04DataMunging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F47D791EB3A41000DC7B15 /* Kata04DataMunging.swift */; };
+		38F47D7D1EB3A4A800DC7B15 /* README_CodeKata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F47D7C1EB3A4A800DC7B15 /* README_CodeKata.swift */; };
+		38F47D801EB3A59900DC7B15 /* weather.dat in Resources */ = {isa = PBXBuildFile; fileRef = 38F47D7F1EB3A59900DC7B15 /* weather.dat */; };
+		38F47D821EB3A76A00DC7B15 /* Kata04Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F47D811EB3A76A00DC7B15 /* Kata04Errors.swift */; };
+		38F47D841EB3A95800DC7B15 /* Tests_Kata04.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F47D831EB3A95800DC7B15 /* Tests_Kata04.swift */; };
+		38F47D861EB951EB00DC7B15 /* PartOneWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F47D851EB951EB00DC7B15 /* PartOneWeatherData.swift */; };
+		38F47D891EB9588C00DC7B15 /* Kata04Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F47D881EB9588C00DC7B15 /* Kata04Day.swift */; };
+		38F47D8D1EB95AC800DC7B15 /* Kata04Temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F47D8C1EB95AC800DC7B15 /* Kata04Temp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +73,14 @@
 		3881AEC11E917D3000FCB71F /* Tests_Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests_Queue.swift; sourceTree = "<group>"; };
 		3881AEC51E91BCFC00FCB71F /* BinarySearchTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		3881AEC81E92A16100FCB71F /* Tests_BinarySearchTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests_BinarySearchTree.swift; sourceTree = "<group>"; };
+		38F47D791EB3A41000DC7B15 /* Kata04DataMunging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kata04DataMunging.swift; sourceTree = "<group>"; };
+		38F47D7C1EB3A4A800DC7B15 /* README_CodeKata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = README_CodeKata.swift; sourceTree = "<group>"; };
+		38F47D7F1EB3A59900DC7B15 /* weather.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = weather.dat; sourceTree = "<group>"; };
+		38F47D811EB3A76A00DC7B15 /* Kata04Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kata04Errors.swift; sourceTree = "<group>"; };
+		38F47D831EB3A95800DC7B15 /* Tests_Kata04.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests_Kata04.swift; sourceTree = "<group>"; };
+		38F47D851EB951EB00DC7B15 /* PartOneWeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartOneWeatherData.swift; sourceTree = "<group>"; };
+		38F47D881EB9588C00DC7B15 /* Kata04Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kata04Day.swift; sourceTree = "<group>"; };
+		38F47D8C1EB95AC800DC7B15 /* Kata04Temp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kata04Temp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +149,7 @@
 				3881AEC11E917D3000FCB71F /* Tests_Queue.swift */,
 				3881AEC81E92A16100FCB71F /* Tests_BinarySearchTree.swift */,
 				38076D111E92DFD9002764B8 /* LargeArrayOfRandomInt.swift */,
+				38F47D831EB3A95800DC7B15 /* Tests_Kata04.swift */,
 				3881AE941E9150E900FCB71F /* Info.plist */,
 			);
 			path = AlgorithmsAndDataStructuresTests;
@@ -149,6 +166,7 @@
 		3881AEAF1E91514800FCB71F /* CommonLogic */ = {
 			isa = PBXGroup;
 			children = (
+				38F47D7B1EB3A49600DC7B15 /* CodeKata */,
 				3881AEB91E9176BF00FCB71F /* Stack */,
 				3881AEB01E91516200FCB71F /* LinkedList */,
 				3881AEC01E917C9F00FCB71F /* Queue */,
@@ -190,6 +208,44 @@
 				3881AEC51E91BCFC00FCB71F /* BinarySearchTree.swift */,
 			);
 			name = BinarySearchTree;
+			sourceTree = "<group>";
+		};
+		38F47D7B1EB3A49600DC7B15 /* CodeKata */ = {
+			isa = PBXGroup;
+			children = (
+				38F47D7C1EB3A4A800DC7B15 /* README_CodeKata.swift */,
+				38F47D7E1EB3A52800DC7B15 /* Kata04DataMunging */,
+			);
+			name = CodeKata;
+			sourceTree = "<group>";
+		};
+		38F47D7E1EB3A52800DC7B15 /* Kata04DataMunging */ = {
+			isa = PBXGroup;
+			children = (
+				38F47D7F1EB3A59900DC7B15 /* weather.dat */,
+				38F47D851EB951EB00DC7B15 /* PartOneWeatherData.swift */,
+				38F47D871EB951F500DC7B15 /* FileReader */,
+				38F47D8E1EBA59DC00DC7B15 /* Kata04WeatherModels */,
+			);
+			name = Kata04DataMunging;
+			sourceTree = "<group>";
+		};
+		38F47D871EB951F500DC7B15 /* FileReader */ = {
+			isa = PBXGroup;
+			children = (
+				38F47D791EB3A41000DC7B15 /* Kata04DataMunging.swift */,
+				38F47D811EB3A76A00DC7B15 /* Kata04Errors.swift */,
+			);
+			name = FileReader;
+			sourceTree = "<group>";
+		};
+		38F47D8E1EBA59DC00DC7B15 /* Kata04WeatherModels */ = {
+			isa = PBXGroup;
+			children = (
+				38F47D881EB9588C00DC7B15 /* Kata04Day.swift */,
+				38F47D8C1EB95AC800DC7B15 /* Kata04Temp.swift */,
+			);
+			name = Kata04WeatherModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3881AE851E9150E900FCB71F /* Assets.xcassets in Resources */,
+				38F47D801EB3A59900DC7B15 /* weather.dat in Resources */,
 				3881AE881E9150E900FCB71F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,13 +387,19 @@
 			files = (
 				3881AEAE1E91513B00FCB71F /* LinkedListNode.swift in Sources */,
 				3881AEB61E91745700FCB71F /* Stack.swift in Sources */,
+				38F47D7A1EB3A41000DC7B15 /* Kata04DataMunging.swift in Sources */,
+				38F47D821EB3A76A00DC7B15 /* Kata04Errors.swift in Sources */,
+				38F47D861EB951EB00DC7B15 /* PartOneWeatherData.swift in Sources */,
 				3881AEBD1E917B3800FCB71F /* Queue.swift in Sources */,
 				3881AEAC1E91511D00FCB71F /* LinkedList.swift in Sources */,
 				3881AE831E9150E900FCB71F /* ViewController.swift in Sources */,
 				3881AEC61E91BCFC00FCB71F /* BinarySearchTree.swift in Sources */,
 				3881AEBF1E917C0D00FCB71F /* QueueNode.swift in Sources */,
 				3881AEB81E91750200FCB71F /* StackNode.swift in Sources */,
+				38F47D891EB9588C00DC7B15 /* Kata04Day.swift in Sources */,
+				38F47D7D1EB3A4A800DC7B15 /* README_CodeKata.swift in Sources */,
 				3881AE811E9150E900FCB71F /* AppDelegate.swift in Sources */,
+				38F47D8D1EB95AC800DC7B15 /* Kata04Temp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +407,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38F47D841EB3A95800DC7B15 /* Tests_Kata04.swift in Sources */,
 				3881AEC91E92A16100FCB71F /* Tests_BinarySearchTree.swift in Sources */,
 				3881AEBB1E9176D700FCB71F /* Tests_Stack.swift in Sources */,
 				38076D121E92DFD9002764B8 /* LargeArrayOfRandomInt.swift in Sources */,
