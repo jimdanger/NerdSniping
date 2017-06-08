@@ -15,7 +15,7 @@ class ViewController: NSViewController {
         
         print("Explore the Unit Tests to see the logic run.")
         print("")
-        print("Other than the Unit Tests, this app doesn nothing.")
+        print("Other than the Unit Tests, this app does nothing.")
         
         doSomethingElse()
         

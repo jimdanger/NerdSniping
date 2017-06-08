@@ -131,6 +131,34 @@
 			name = CTCI;
 			sourceTree = "<group>";
 		};
+		3863EEC31EEA00F700C17051 /* HashTable */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = HashTable;
+			sourceTree = "<group>";
+		};
+		3863EEC41EEA011900C17051 /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				3863EEC31EEA00F700C17051 /* HashTable */,
+				3881AEB91E9176BF00FCB71F /* Stack */,
+				3881AEB01E91516200FCB71F /* LinkedList */,
+				3881AEC01E917C9F00FCB71F /* Queue */,
+				3881AEC71E91BD0900FCB71F /* BinarySearchTree */,
+			);
+			name = DataStructures;
+			sourceTree = "<group>";
+		};
+		3863EEC51EEA012800C17051 /* Katas */ = {
+			isa = PBXGroup;
+			children = (
+				3863EEBE1EE977E500C17051 /* CTCI */,
+				38F47D7B1EB3A49600DC7B15 /* CodeKata */,
+			);
+			name = Katas;
+			sourceTree = "<group>";
+		};
 		3881AE741E9150E800FCB71F = {
 			isa = PBXGroup;
 			children = (
@@ -190,12 +218,8 @@
 		3881AEAF1E91514800FCB71F /* CommonLogic */ = {
 			isa = PBXGroup;
 			children = (
-				3863EEBE1EE977E500C17051 /* CTCI */,
-				38F47D7B1EB3A49600DC7B15 /* CodeKata */,
-				3881AEB91E9176BF00FCB71F /* Stack */,
-				3881AEB01E91516200FCB71F /* LinkedList */,
-				3881AEC01E917C9F00FCB71F /* Queue */,
-				3881AEC71E91BD0900FCB71F /* BinarySearchTree */,
+				3863EEC51EEA012800C17051 /* Katas */,
+				3863EEC41EEA011900C17051 /* DataStructures */,
 			);
 			name = CommonLogic;
 			sourceTree = "<group>";

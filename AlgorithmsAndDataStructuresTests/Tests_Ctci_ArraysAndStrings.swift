@@ -39,7 +39,30 @@ class Tests_Ctci_ArraysAndStrings: XCTestCase {
         let nonUniqueString = "asdfghjka"
         let result = arraysAndStringsIsUnique.isUnique(string: nonUniqueString)
         XCTAssert(!result)
+    }
+    
+    func test_isUnique_UniqueReturnsTrue_ByIterating() {
         
+        let arraysAndStringsIsUnique: ArraysAndStringsIsUnique = ArraysAndStringsIsUnique()
+        let uniqueString = "asdfghjk"
+        let result = arraysAndStringsIsUnique.isUnique(string: uniqueString, determineByIterating: true)
+        XCTAssert(result)
+    }
+    
+    func test_isUnique_NonUniqueReturnsFalse_ByIterating() {
+        
+        let arraysAndStringsIsUnique: ArraysAndStringsIsUnique = ArraysAndStringsIsUnique()
+        let nonUniqueString = "asdfghjka"
+        let result = arraysAndStringsIsUnique.isUnique(string: nonUniqueString, determineByIterating: true)
+        XCTAssert(!result)
+    }
+    
+    func test_isUnique_UniqueReturnsTrue_ByHashing_TestForTypoInAsNumberExtention() {
+        
+        let arraysAndStringsIsUnique: ArraysAndStringsIsUnique = ArraysAndStringsIsUnique()
+        let nonUniqueString = "ABC DEFGHIJKLMNOPQRSTUVWXYZ"
+        let result = arraysAndStringsIsUnique.isUnique(string: nonUniqueString, determineByIterating: true)
+        XCTAssert(result)
     }
 
 }
