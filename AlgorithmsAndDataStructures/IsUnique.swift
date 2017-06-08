@@ -32,11 +32,10 @@ class ArraysAndStringsIsUnique {
             for character in string.characters {
                 if character == charInFocus {
                     timesCharAppears = timesCharAppears + 1
+                    if timesCharAppears > 1 {
+                        return false
+                    }
                 }
-            }
-            
-            if timesCharAppears > 1 {
-                return false
             }
         }
         
