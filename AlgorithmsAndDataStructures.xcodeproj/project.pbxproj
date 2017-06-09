@@ -13,6 +13,7 @@
 		3863EEC21EE9787600C17051 /* Tests_Ctci_ArraysAndStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3863EEC11EE9787600C17051 /* Tests_Ctci_ArraysAndStrings.swift */; };
 		3863EEC71EEA0D6A00C17051 /* StringPermutationChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3863EEC61EEA0D6A00C17051 /* StringPermutationChecker.swift */; };
 		3863EEC91EEAB70900C17051 /* URLifyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3863EEC81EEAB70900C17051 /* URLifyer.swift */; };
+		3863EECB1EEABE2300C17051 /* PalindromePermutationChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3863EECA1EEABE2300C17051 /* PalindromePermutationChecker.swift */; };
 		3881AE811E9150E900FCB71F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881AE801E9150E900FCB71F /* AppDelegate.swift */; };
 		3881AE831E9150E900FCB71F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881AE821E9150E900FCB71F /* ViewController.swift */; };
 		3881AE851E9150E900FCB71F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3881AE841E9150E900FCB71F /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 		3863EEC11EE9787600C17051 /* Tests_Ctci_ArraysAndStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests_Ctci_ArraysAndStrings.swift; sourceTree = "<group>"; };
 		3863EEC61EEA0D6A00C17051 /* StringPermutationChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringPermutationChecker.swift; sourceTree = "<group>"; };
 		3863EEC81EEAB70900C17051 /* URLifyer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLifyer.swift; sourceTree = "<group>"; };
+		3863EECA1EEABE2300C17051 /* PalindromePermutationChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalindromePermutationChecker.swift; sourceTree = "<group>"; };
 		3881AE7D1E9150E900FCB71F /* AlgorithmsAndDataStructures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlgorithmsAndDataStructures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3881AE801E9150E900FCB71F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3881AE821E9150E900FCB71F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				3863EEBC1EE9771D00C17051 /* IsUnique.swift */,
 				3863EEC61EEA0D6A00C17051 /* StringPermutationChecker.swift */,
 				3863EEC81EEAB70900C17051 /* URLifyer.swift */,
+				3863EECA1EEABE2300C17051 /* PalindromePermutationChecker.swift */,
 			);
 			name = ArraysAndStrings;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				3881AEB61E91745700FCB71F /* Stack.swift in Sources */,
 				38F47D7A1EB3A41000DC7B15 /* Kata04DataMunging.swift in Sources */,
 				3863EEC71EEA0D6A00C17051 /* StringPermutationChecker.swift in Sources */,
+				3863EECB1EEABE2300C17051 /* PalindromePermutationChecker.swift in Sources */,
 				38F47D821EB3A76A00DC7B15 /* Kata04Errors.swift in Sources */,
 				38F47D861EB951EB00DC7B15 /* PartOneWeatherData.swift in Sources */,
 				3863EEC01EE9780A00C17051 /* README_ctci.swift in Sources */,

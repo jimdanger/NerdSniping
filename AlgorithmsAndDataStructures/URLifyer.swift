@@ -13,7 +13,6 @@
     
     URLify: Write a method ro replace all spaces in a string with '%20'. 
  
- 
  */
 
 class URLifyer {
@@ -27,7 +26,7 @@ class URLifyer {
                 return String(c)
             }
         }
-        
+
         return modifiedStringCharacterArray.joined(separator: "")
     }
 }

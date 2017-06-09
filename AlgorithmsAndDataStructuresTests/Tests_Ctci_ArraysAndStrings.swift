@@ -179,5 +179,43 @@ class Tests_Ctci_ArraysAndStrings: XCTestCase {
         let result = "asdf"
         XCTAssert(result != uRLifyer.urlify(string: s))
     }
-
+    
+    func test_URLify4(){
+        
+        let uRLifyer: URLifyer = URLifyer()
+        let s = "a s d f"
+        let result = "a%20s%20d%20f"
+        XCTAssert(result == uRLifyer.urlify(string: s))
+    }
+    
+    // MARK: - PalindromePermutationChecker.swift
+    
+    func test_PalindromePermutationChecker_falseIfDifferentLength(){
+        
+        let checker: PalindromePermutationChecker = PalindromePermutationChecker()
+        let s1 = "a"
+        let s2 = "bc"
+        let result = checker.check(s1: s1, s2: s2)
+        XCTAssert(!result)
+    }
+    
+    func test_PalindromePermutationChecker (){
+        
+        let checker: PalindromePermutationChecker = PalindromePermutationChecker()
+        let s1 = "abc"
+        let s2 = "cba"
+        let result = checker.check(s1: s1, s2: s2)
+        XCTAssert(result)
+    }
+    
+    func test_PalindromePermutationChecker_false (){
+        
+        let checker: PalindromePermutationChecker = PalindromePermutationChecker()
+        let s1 = "abcd"
+        let s2 = "dcbx"
+        let result = checker.check(s1: s1, s2: s2)
+        XCTAssert(!result)
+    }
+    
+    
 }
