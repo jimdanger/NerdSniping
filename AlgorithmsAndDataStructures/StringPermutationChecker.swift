@@ -16,8 +16,29 @@
 class StringPermutationChecker {
    
     
-    func isPermutation(string1: String, string2: String) -> Bool {
+    func isPermutation(string1: String, string2: String, bySorting: Bool = true ) -> Bool {
         
+        if bySorting {
+            return determingBySorting(string1: string1, string2: string2)
+        } else {
+            return determingByIterating(string1: string1, string2: string2)
+        }
+    }
+    
+    
+    private func determingBySorting(string1: String, string2: String) -> Bool {
+
+        if string1.characters.count != string2.characters.count {
+            return false
+        }
+        
+        let s1Sorted = string1.characters.sorted()
+        let s2Sorted = string2.characters.sorted()
+        
+        return s1Sorted.elementsEqual(s2Sorted)
+    }
+    
+    private func determingByIterating(string1: String, string2: String) -> Bool {
         if string1.characters.count != string2.characters.count {
             return false
         }
@@ -36,12 +57,9 @@ class StringPermutationChecker {
             }
         }
         return true
-        
-        
-        // Another possible approach: sort each and see if they match?
-        
-    }
     
+    }
+
     private func numberOfInstances(character: Character, string: String) -> Int {
         
         var count = 0

@@ -109,5 +109,75 @@ class Tests_Ctci_ArraysAndStrings: XCTestCase {
         let s2 = "abbcd"
         XCTAssert(!checker.isPermutation(string1: s1, string2: s2))
     }
+    
+    
+    // MARK: - CheckPermutation using iteration instead of sorting
+    
+    func test_isPermutationFalseWhenDifferentLengths_byIterating(){
+        
+        let checker: StringPermutationChecker = StringPermutationChecker()
+        let s1 = "a"
+        let s2 = "ab"
+        XCTAssert(!checker.isPermutation(string1: s1, string2: s2, bySorting: false))
+    }
+    
+    func test_worksWithNoDuplicates_True_byIterating(){
+        
+        let checker: StringPermutationChecker = StringPermutationChecker()
+        let s1 = "asdf"
+        let s2 = "fdsa"
+        XCTAssert(checker.isPermutation(string1: s1, string2: s2, bySorting: false))
+    }
+    
+    func test_worksWithNoDuplicates_False_byIterating(){
+        
+        let checker: StringPermutationChecker = StringPermutationChecker()
+        let s1 = "abcd"
+        let s2 = "cbaz"
+        XCTAssert(!checker.isPermutation(string1: s1, string2: s2, bySorting: false))
+    }
+    
+    func test_worksWithDuplicates_True_byIterating(){
+        
+        let checker: StringPermutationChecker = StringPermutationChecker()
+        let s1 = "aasdf"
+        let s2 = "fdsaa"
+        XCTAssert(checker.isPermutation(string1: s1, string2: s2, bySorting: false))
+    }
+    
+    func test_worksWithDuplicates_False_byIterating(){
+        
+        let checker: StringPermutationChecker = StringPermutationChecker()
+        let s1 = "aabcd"
+        let s2 = "abbcd"
+        XCTAssert(!checker.isPermutation(string1: s1, string2: s2, bySorting: false))
+    }
+    
+    
+    // MARK: - URLify 
+    
+    func test_URLify(){
+        
+        let uRLifyer: URLifyer = URLifyer()
+        let s = "thisIsAStringWithA space"
+        let result = "thisIsAStringWithA%20space"
+        XCTAssert(result == uRLifyer.urlify(string: s))
+    }
+    
+    func test_URLify2(){
+        
+        let uRLifyer: URLifyer = URLifyer()
+        let s = "asdf"
+        let result = "asdf"
+        XCTAssert(result == uRLifyer.urlify(string: s))
+    }
+    
+    func test_URLify3(){
+        
+        let uRLifyer: URLifyer = URLifyer()
+        let s = "as df"
+        let result = "asdf"
+        XCTAssert(result != uRLifyer.urlify(string: s))
+    }
 
 }
