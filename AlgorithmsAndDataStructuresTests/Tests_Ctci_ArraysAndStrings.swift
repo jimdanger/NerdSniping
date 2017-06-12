@@ -303,11 +303,4 @@ class Tests_Ctci_ArraysAndStrings: XCTestCase {
     }
     
     
-    
-   
-    
-    
-    
-    
-    
 }

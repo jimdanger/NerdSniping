@@ -55,7 +55,8 @@ class PalindromePermutationChecker {
         let instanceCounter = StringPermutationChecker()
         
         var instancesOfCharacter = 0
-        var numberOfOddNumberOfInstances = 0
+        var numberOfUniqueOddInstances = 0
+        var uniqueOddInstances: [Character] = []
         
         for character in noSpacesString.characters {
             instancesOfCharacter = instanceCounter.numberOfInstances(character: character, string: noSpacesString)
@@ -71,16 +72,24 @@ class PalindromePermutationChecker {
             } else {
                 if !isEven(number: instancesOfCharacter) {
                     
-                    numberOfOddNumberOfInstances += 1
-                    // this is flawed. 
+                    if instancesOfCharacter % 2 == 1 {
+                        numberOfUniqueOddInstances += 1
+                       
+                        if !uniqueOddInstances.contains(character) {
+                            
+                            uniqueOddInstances.append(character)
+                           
+                            if uniqueOddInstances.count > 1 {
+                                print(uniqueOddInstances.count)
+                                return false
+                            }
+                        }
+                    }
                 }
             }
         }
+       
         
-        if numberOfOddNumberOfInstances > 1 {
-            print(numberOfOddNumberOfInstances)
-            return false
-        }
         return true
         
     }
