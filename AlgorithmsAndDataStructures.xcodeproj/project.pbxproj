@@ -48,13 +48,6 @@
 			remoteGlobalIDString = 3881AE7C1E9150E800FCB71F;
 			remoteInfo = AlgorithmsAndDataStructures;
 		};
-		3881AE9A1E9150E900FCB71F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3881AE751E9150E800FCB71F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3881AE7C1E9150E800FCB71F;
-			remoteInfo = AlgorithmsAndDataStructures;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -74,8 +67,6 @@
 		3881AE891E9150E900FCB71F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3881AE8E1E9150E900FCB71F /* AlgorithmsAndDataStructuresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmsAndDataStructuresTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3881AE941E9150E900FCB71F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3881AE991E9150E900FCB71F /* AlgorithmsAndDataStructuresUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmsAndDataStructuresUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3881AE9F1E9150E900FCB71F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3881AEAB1E91511D00FCB71F /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		3881AEAD1E91513B00FCB71F /* LinkedListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedListNode.swift; sourceTree = "<group>"; };
 		3881AEB11E9157CB00FCB71F /* Tests_LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests_LinkedList.swift; sourceTree = "<group>"; };
@@ -106,13 +97,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3881AE8B1E9150E900FCB71F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3881AE961E9150E900FCB71F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -176,7 +160,6 @@
 				380F65FB1EEEF41900ABCE96 /* README.md */,
 				3881AE7F1E9150E900FCB71F /* AlgorithmsAndDataStructures */,
 				3881AE911E9150E900FCB71F /* AlgorithmsAndDataStructuresTests */,
-				3881AE9C1E9150E900FCB71F /* AlgorithmsAndDataStructuresUITests */,
 				3881AE7E1E9150E900FCB71F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -186,7 +169,6 @@
 			children = (
 				3881AE7D1E9150E900FCB71F /* AlgorithmsAndDataStructures.app */,
 				3881AE8E1E9150E900FCB71F /* AlgorithmsAndDataStructuresTests.xctest */,
-				3881AE991E9150E900FCB71F /* AlgorithmsAndDataStructuresUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,14 +199,6 @@
 				3881AE941E9150E900FCB71F /* Info.plist */,
 			);
 			path = AlgorithmsAndDataStructuresTests;
-			sourceTree = "<group>";
-		};
-		3881AE9C1E9150E900FCB71F /* AlgorithmsAndDataStructuresUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3881AE9F1E9150E900FCB71F /* Info.plist */,
-			);
-			path = AlgorithmsAndDataStructuresUITests;
 			sourceTree = "<group>";
 		};
 		3881AEAF1E91514800FCB71F /* CommonLogic */ = {
@@ -355,24 +329,6 @@
 			productReference = 3881AE8E1E9150E900FCB71F /* AlgorithmsAndDataStructuresTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3881AE981E9150E900FCB71F /* AlgorithmsAndDataStructuresUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3881AEA81E9150E900FCB71F /* Build configuration list for PBXNativeTarget "AlgorithmsAndDataStructuresUITests" */;
-			buildPhases = (
-				3881AE951E9150E900FCB71F /* Sources */,
-				3881AE961E9150E900FCB71F /* Frameworks */,
-				3881AE971E9150E900FCB71F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3881AE9B1E9150E900FCB71F /* PBXTargetDependency */,
-			);
-			name = AlgorithmsAndDataStructuresUITests;
-			productName = AlgorithmsAndDataStructuresUITests;
-			productReference = 3881AE991E9150E900FCB71F /* AlgorithmsAndDataStructuresUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -389,12 +345,6 @@
 						ProvisioningStyle = Automatic;
 					};
 					3881AE8D1E9150E900FCB71F = {
-						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = 5MFLP3AQ7C;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 3881AE7C1E9150E800FCB71F;
-					};
-					3881AE981E9150E900FCB71F = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 5MFLP3AQ7C;
 						ProvisioningStyle = Automatic;
@@ -417,7 +367,6 @@
 			targets = (
 				3881AE7C1E9150E800FCB71F /* AlgorithmsAndDataStructures */,
 				3881AE8D1E9150E900FCB71F /* AlgorithmsAndDataStructuresTests */,
-				3881AE981E9150E900FCB71F /* AlgorithmsAndDataStructuresUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -434,13 +383,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3881AE8C1E9150E900FCB71F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3881AE971E9150E900FCB71F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -492,13 +434,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3881AE951E9150E900FCB71F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -506,11 +441,6 @@
 			isa = PBXTargetDependency;
 			target = 3881AE7C1E9150E800FCB71F /* AlgorithmsAndDataStructures */;
 			targetProxy = 3881AE8F1E9150E900FCB71F /* PBXContainerItemProxy */;
-		};
-		3881AE9B1E9150E900FCB71F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3881AE7C1E9150E800FCB71F /* AlgorithmsAndDataStructures */;
-			targetProxy = 3881AE9A1E9150E900FCB71F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -678,36 +608,6 @@
 			};
 			name = Release;
 		};
-		3881AEA91E9150E900FCB71F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 5MFLP3AQ7C;
-				INFOPLIST_FILE = AlgorithmsAndDataStructuresUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jimdanger.AlgorithmsAndDataStructuresUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = AlgorithmsAndDataStructures;
-			};
-			name = Debug;
-		};
-		3881AEAA1E9150E900FCB71F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 5MFLP3AQ7C;
-				INFOPLIST_FILE = AlgorithmsAndDataStructuresUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jimdanger.AlgorithmsAndDataStructuresUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = AlgorithmsAndDataStructures;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -734,15 +634,6 @@
 			buildConfigurations = (
 				3881AEA61E9150E900FCB71F /* Debug */,
 				3881AEA71E9150E900FCB71F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3881AEA81E9150E900FCB71F /* Build configuration list for PBXNativeTarget "AlgorithmsAndDataStructuresUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3881AEA91E9150E900FCB71F /* Debug */,
-				3881AEAA1E9150E900FCB71F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
