@@ -71,7 +71,7 @@ class ArraysAndStringsIsUnique {
 fileprivate extension Character {
     func asNumber() -> Int {
         // this is silly. don't do this. There are actually 256 characters...
-        // in the future, use this instead: https://developer.apple.com/documentation/swift/character/2906952-unicodescalars
+        // in the real world, use this instead: https://developer.apple.com/documentation/swift/character/2906952-unicodescalars
         switch self {
         case "a":
             return 1

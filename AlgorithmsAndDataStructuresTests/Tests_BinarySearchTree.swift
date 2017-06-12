@@ -228,7 +228,7 @@ class Tests_BinarySearchTree: XCTestCase {
         XCTAssertEqual(resultNode?.value, nil)
     }
     
-    func testHugeBstBfs() {
+    func testMeasureHugeBstBfs() {
         let bst = BinarySearchTree()
         
         self.putTonsOfStuff(bst: bst)

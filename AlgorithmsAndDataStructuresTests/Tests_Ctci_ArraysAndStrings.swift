@@ -190,32 +190,124 @@ class Tests_Ctci_ArraysAndStrings: XCTestCase {
     
     // MARK: - PalindromePermutationChecker.swift
     
-    func test_PalindromePermutationChecker_falseIfDifferentLength(){
+    func test_isPalindrome_falseIfDifferentLength(){
         
         let checker: PalindromePermutationChecker = PalindromePermutationChecker()
         let s1 = "a"
         let s2 = "bc"
-        let result = checker.check(s1: s1, s2: s2)
+        let result = checker.isPalindrome(s1: s1, s2: s2)
         XCTAssert(!result)
     }
     
-    func test_PalindromePermutationChecker (){
+    
+    
+    func test_isPalindrome(){
         
         let checker: PalindromePermutationChecker = PalindromePermutationChecker()
         let s1 = "abc"
         let s2 = "cba"
-        let result = checker.check(s1: s1, s2: s2)
+        let result = checker.isPalindrome(s1: s1, s2: s2)
         XCTAssert(result)
     }
     
-    func test_PalindromePermutationChecker_false (){
+    func test_isPalindrome_false(){
         
         let checker: PalindromePermutationChecker = PalindromePermutationChecker()
         let s1 = "abcd"
         let s2 = "dcbx"
-        let result = checker.check(s1: s1, s2: s2)
+        let result = checker.isPalindrome(s1: s1, s2: s2)
         XCTAssert(!result)
     }
+    
+    func test_removeSpaces(){
+        
+        let checker: PalindromePermutationChecker = PalindromePermutationChecker()
+        let s = "a b c"
+        let expectedResult = "abc"
+        let result = checker.removeSpaces(string: s)
+        XCTAssert(result == expectedResult)
+    }
+    
+    
+    func test_removeSpaces2(){
+        
+        let checker: PalindromePermutationChecker = PalindromePermutationChecker()
+        let s = "abc"
+        let expectedResult = "abc"
+        let result = checker.removeSpaces(string: s)
+        XCTAssert(result == expectedResult)
+    }
+    
+    func test_isPermutationOfPalindrome(){
+        
+        let checker: PalindromePermutationChecker = PalindromePermutationChecker()
+        let s = "abc"
+        let result = checker.isPermutationOfPalindrome(string: s)
+        XCTAssert(!result)
+    }
+    
+    func test_isPermutationOfPalindrome2(){
+        
+        let checker: PalindromePermutationChecker = PalindromePermutationChecker()
+        let s = "aca"
+        let result = checker.isPermutationOfPalindrome(string: s)
+        XCTAssert(result)
+    }
+    
+    func test_isPermutationOfPalindrome3(){
+        
+        let checker: PalindromePermutationChecker = PalindromePermutationChecker()
+        let s = "aacaab"
+        let result = checker.isPermutationOfPalindrome(string: s)
+        XCTAssert(!result)
+    }
+    
+    func test_isPermutationOfPalindrome4(){
+        
+        let checker: PalindromePermutationChecker = PalindromePermutationChecker()
+        let s = "aacaacasdffdsa"
+        let result = checker.isPermutationOfPalindrome(string: s)
+        XCTAssert(result)
+    }
+    
+    func test_isPermutationOfPalindrome5(){
+        
+        let checker: PalindromePermutationChecker = PalindromePermutationChecker()
+        let s = "ahah"
+        let result = checker.isPermutationOfPalindrome(string: s)
+        XCTAssert(result)
+    }
+    
+    func test_isPermutationOfPalindrome6(){
+        
+        let checker: PalindromePermutationChecker = PalindromePermutationChecker()
+        let s = "ahaha"
+        let result = checker.isPermutationOfPalindrome(string: s)
+        XCTAssert(result)
+    }
+    
+    func test_isEven(){
+        
+        let checker: PalindromePermutationChecker = PalindromePermutationChecker()
+        let n = 2
+        let result = checker.isEven(number: n)
+        XCTAssert(result)
+    }
+    
+    func test_isOdd(){
+        
+        let checker: PalindromePermutationChecker = PalindromePermutationChecker()
+        let n = 3
+        let result = !checker.isEven(number: n)
+        XCTAssert(result)
+    }
+    
+    
+    
+   
+    
+    
+    
     
     
 }

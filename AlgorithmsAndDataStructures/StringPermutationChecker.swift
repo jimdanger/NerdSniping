@@ -60,7 +60,7 @@ class StringPermutationChecker {
     
     }
 
-    private func numberOfInstances(character: Character, string: String) -> Int {
+    func numberOfInstances(character: Character, string: String) -> Int {
         
         var count = 0
         
