@@ -303,4 +303,94 @@ class Tests_Ctci_ArraysAndStrings: XCTestCase {
     }
     
     
+    // MARK: - StringCompresser.swift - isCompressable
+    func test_isCompressable() {
+        let s = "asdf"
+        XCTAssert(!s.isCompressable())
+    }
+    func test_isCompressable2() {
+        let s = ""
+        XCTAssert(!s.isCompressable())
+    }
+    
+    func test_isCompressable3() {
+        let s = "aa"
+        XCTAssert(!s.isCompressable())
+    }
+    
+    func test_isCompressable4() {
+        let s = "asdff"
+        XCTAssert(!s.isCompressable())
+    }
+    
+    func test_isCompressable5() {
+        let s = "asddf"
+        XCTAssert(!s.isCompressable())
+    }
+    
+    func test_isCompressable6() {
+        let s = "aaa"
+        XCTAssert(s.isCompressable())
+    }
+    
+    func test_isCompressable7() {
+        let s = "aaab"
+        XCTAssert(s.isCompressable())
+    }
+    
+    func test_isCompressable8() {
+        let s = "abbbc"
+        XCTAssert(s.isCompressable())
+    }
+    
+    // MARK: - StringCompresser.swift - compress
+    
+    func test_compress_returnsSame() {
+        let compresser = StringCompresser()
+        let s = "asdf"
+        XCTAssert(compresser.compress(s: s) == s)
+    }
+    
+    func test_compress_returnsSame2() {
+        let compresser = StringCompresser()
+        let s = ""
+        XCTAssert(compresser.compress(s: s) == s)
+    }
+    
+    func test_compress_returnsSame3() {
+        let compresser = StringCompresser()
+        let s = "aabbcc"
+        let expectedResult = "aabbcc"
+        XCTAssertEqual(compresser.compress(s: s), expectedResult)
+    }
+    
+    func test_appendOrReplace(){
+        var s = "a"
+        let expectedResult = "a5"
+        let result = s.appendNumberOrReplaceLastNumberWith(x: 5)
+        XCTAssertEqual(result, expectedResult)
+    }
+    
+    func test_appendOrReplace2(){
+        var s = "a1"
+        let expectedResult = "a2"
+        let result = s.appendNumberOrReplaceLastNumberWith(x: 2)
+        XCTAssertEqual(result, expectedResult)
+    }
+    
+    
+    func test_compress() {
+        let compresser = StringCompresser()
+        let s = "aaabbcc"
+        let expectedResult = "a3b2c2"
+        XCTAssertEqual(compresser.compress(s: s), expectedResult)
+    }
+    
+    func test_compress2() {
+        let compresser = StringCompresser()
+        let s = "abbccc"
+        let expectedResult = "ab2c3"
+        XCTAssertEqual(compresser.compress(s: s), expectedResult)
+    }
+    
 }

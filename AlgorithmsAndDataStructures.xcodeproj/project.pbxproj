@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		38076D121E92DFD9002764B8 /* LargeArrayOfRandomInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38076D111E92DFD9002764B8 /* LargeArrayOfRandomInt.swift */; };
 		380F65FC1EEEF41900ABCE96 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 380F65FB1EEEF41900ABCE96 /* README.md */; };
+		380F65FE1EEF581500ABCE96 /* StringCompresser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F65FD1EEF581500ABCE96 /* StringCompresser.swift */; };
 		3863EEBD1EE9771D00C17051 /* IsUnique.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3863EEBC1EE9771D00C17051 /* IsUnique.swift */; };
 		3863EEC01EE9780A00C17051 /* README_ctci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3863EEBF1EE9780A00C17051 /* README_ctci.swift */; };
 		3863EEC21EE9787600C17051 /* Tests_Ctci_ArraysAndStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3863EEC11EE9787600C17051 /* Tests_Ctci_ArraysAndStrings.swift */; };
@@ -53,6 +54,7 @@
 /* Begin PBXFileReference section */
 		38076D111E92DFD9002764B8 /* LargeArrayOfRandomInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeArrayOfRandomInt.swift; sourceTree = "<group>"; };
 		380F65FB1EEEF41900ABCE96 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		380F65FD1EEF581500ABCE96 /* StringCompresser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringCompresser.swift; sourceTree = "<group>"; };
 		3863EEBC1EE9771D00C17051 /* IsUnique.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsUnique.swift; sourceTree = "<group>"; };
 		3863EEBF1EE9780A00C17051 /* README_ctci.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = README_ctci.swift; sourceTree = "<group>"; };
 		3863EEC11EE9787600C17051 /* Tests_Ctci_ArraysAndStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests_Ctci_ArraysAndStrings.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				3863EEC61EEA0D6A00C17051 /* StringPermutationChecker.swift */,
 				3863EEC81EEAB70900C17051 /* URLifyer.swift */,
 				3863EECA1EEABE2300C17051 /* PalindromePermutationChecker.swift */,
+				380F65FD1EEF581500ABCE96 /* StringCompresser.swift */,
 			);
 			name = ArraysAndStrings;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				3863EEC91EEAB70900C17051 /* URLifyer.swift in Sources */,
 				3881AEAE1E91513B00FCB71F /* LinkedListNode.swift in Sources */,
 				3881AEB61E91745700FCB71F /* Stack.swift in Sources */,
+				380F65FE1EEF581500ABCE96 /* StringCompresser.swift in Sources */,
 				380F65FC1EEEF41900ABCE96 /* README.md in Sources */,
 				38F47D7A1EB3A41000DC7B15 /* Kata04DataMunging.swift in Sources */,
 				3863EEC71EEA0D6A00C17051 /* StringPermutationChecker.swift in Sources */,
