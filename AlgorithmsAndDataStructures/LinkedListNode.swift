@@ -7,7 +7,7 @@
 //
 
 class LinkedListNode {
-    typealias T = String 
+    typealias T = String
 
     var data: T?
     var nextNode: LinkedListNode?

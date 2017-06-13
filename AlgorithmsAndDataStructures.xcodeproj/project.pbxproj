@@ -10,6 +10,8 @@
 		38076D121E92DFD9002764B8 /* LargeArrayOfRandomInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38076D111E92DFD9002764B8 /* LargeArrayOfRandomInt.swift */; };
 		380F65FC1EEEF41900ABCE96 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 380F65FB1EEEF41900ABCE96 /* README.md */; };
 		380F65FE1EEF581500ABCE96 /* StringCompresser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F65FD1EEF581500ABCE96 /* StringCompresser.swift */; };
+		380F66001EF0095100ABCE96 /* LLRemoveDupes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F65FF1EF0095100ABCE96 /* LLRemoveDupes.swift */; };
+		380F66031EF009FB00ABCE96 /* Tests_Ctci_LinkedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F66021EF009FB00ABCE96 /* Tests_Ctci_LinkedLists.swift */; };
 		3863EEBD1EE9771D00C17051 /* IsUnique.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3863EEBC1EE9771D00C17051 /* IsUnique.swift */; };
 		3863EEC01EE9780A00C17051 /* README_ctci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3863EEBF1EE9780A00C17051 /* README_ctci.swift */; };
 		3863EEC21EE9787600C17051 /* Tests_Ctci_ArraysAndStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3863EEC11EE9787600C17051 /* Tests_Ctci_ArraysAndStrings.swift */; };
@@ -55,6 +57,8 @@
 		38076D111E92DFD9002764B8 /* LargeArrayOfRandomInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeArrayOfRandomInt.swift; sourceTree = "<group>"; };
 		380F65FB1EEEF41900ABCE96 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		380F65FD1EEF581500ABCE96 /* StringCompresser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringCompresser.swift; sourceTree = "<group>"; };
+		380F65FF1EF0095100ABCE96 /* LLRemoveDupes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLRemoveDupes.swift; sourceTree = "<group>"; };
+		380F66021EF009FB00ABCE96 /* Tests_Ctci_LinkedLists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests_Ctci_LinkedLists.swift; sourceTree = "<group>"; };
 		3863EEBC1EE9771D00C17051 /* IsUnique.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsUnique.swift; sourceTree = "<group>"; };
 		3863EEBF1EE9780A00C17051 /* README_ctci.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = README_ctci.swift; sourceTree = "<group>"; };
 		3863EEC11EE9787600C17051 /* Tests_Ctci_ArraysAndStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests_Ctci_ArraysAndStrings.swift; sourceTree = "<group>"; };
@@ -108,6 +112,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		380F66011EF0095600ABCE96 /* LinkedLists */ = {
+			isa = PBXGroup;
+			children = (
+				380F65FF1EF0095100ABCE96 /* LLRemoveDupes.swift */,
+			);
+			name = LinkedLists;
+			sourceTree = "<group>";
+		};
 		3863EEBB1EE976F900C17051 /* ArraysAndStrings */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				3863EEBF1EE9780A00C17051 /* README_ctci.swift */,
+				380F66011EF0095600ABCE96 /* LinkedLists */,
 				3863EEBB1EE976F900C17051 /* ArraysAndStrings */,
 			);
 			name = CTCI;
@@ -199,6 +212,7 @@
 				38076D111E92DFD9002764B8 /* LargeArrayOfRandomInt.swift */,
 				38F47D831EB3A95800DC7B15 /* Tests_Kata04.swift */,
 				3863EEC11EE9787600C17051 /* Tests_Ctci_ArraysAndStrings.swift */,
+				380F66021EF009FB00ABCE96 /* Tests_Ctci_LinkedLists.swift */,
 				3881AE941E9150E900FCB71F /* Info.plist */,
 			);
 			path = AlgorithmsAndDataStructuresTests;
@@ -419,6 +433,7 @@
 				3881AEB81E91750200FCB71F /* StackNode.swift in Sources */,
 				38F47D891EB9588C00DC7B15 /* Kata04Day.swift in Sources */,
 				38F47D7D1EB3A4A800DC7B15 /* README_CodeKata.swift in Sources */,
+				380F66001EF0095100ABCE96 /* LLRemoveDupes.swift in Sources */,
 				3881AE811E9150E900FCB71F /* AppDelegate.swift in Sources */,
 				38F47D8D1EB95AC800DC7B15 /* Kata04Temp.swift in Sources */,
 			);
@@ -429,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3863EEC21EE9787600C17051 /* Tests_Ctci_ArraysAndStrings.swift in Sources */,
+				380F66031EF009FB00ABCE96 /* Tests_Ctci_LinkedLists.swift in Sources */,
 				38F47D841EB3A95800DC7B15 /* Tests_Kata04.swift in Sources */,
 				3881AEC91E92A16100FCB71F /* Tests_BinarySearchTree.swift in Sources */,
 				3881AEBB1E9176D700FCB71F /* Tests_Stack.swift in Sources */,

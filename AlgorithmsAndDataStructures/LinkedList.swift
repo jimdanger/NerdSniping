@@ -7,7 +7,7 @@
 //
 
 public class LinkedList {
-    typealias T = String
+    typealias T = LinkedListNode.T
     
     var headNode: LinkedListNode?
     
