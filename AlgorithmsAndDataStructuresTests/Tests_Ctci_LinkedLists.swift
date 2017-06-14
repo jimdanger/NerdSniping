@@ -21,7 +21,7 @@ class Tests_Ctci_LinkedLists: XCTestCase {
         super.tearDown()
     }
 
-    // MARK: LLRemoveDupes
+    // MARK: LLRemoveDupes - by iterating
     func getStringFrom(ll: LinkedList) -> String {
         var node = ll.headNode
         var data = ""
@@ -50,7 +50,7 @@ class Tests_Ctci_LinkedLists: XCTestCase {
         lLRemoveDupes.save(data: "a")
         lLRemoveDupes.save(data: "b")
         lLRemoveDupes.save(data: "c")
-        lLRemoveDupes.removeDups()
+        lLRemoveDupes.removeDups(by: .iterating)
         let allData = getStringFrom(ll: lLRemoveDupes)
         let expectedResult = "abc"
         XCTAssertEqual(expectedResult, allData)
@@ -62,7 +62,7 @@ class Tests_Ctci_LinkedLists: XCTestCase {
         lLRemoveDupes.save(data: "b")
         lLRemoveDupes.save(data: "c")
         lLRemoveDupes.save(data: "c")
-        lLRemoveDupes.removeDups()
+        lLRemoveDupes.removeDups(by: .iterating)
         let allData = getStringFrom(ll: lLRemoveDupes)
         let expectedResult = "abc"
         XCTAssertEqual(expectedResult, allData)
@@ -77,7 +77,7 @@ class Tests_Ctci_LinkedLists: XCTestCase {
         lLRemoveDupes.save(data: "b")
         lLRemoveDupes.save(data: "c")
         lLRemoveDupes.save(data: "c")
-        lLRemoveDupes.removeDups()
+        lLRemoveDupes.removeDups(by: .iterating)
         let allData = getStringFrom(ll: lLRemoveDupes)
         let expectedResult = "abc"
         XCTAssertEqual(expectedResult, allData)
@@ -92,12 +92,80 @@ class Tests_Ctci_LinkedLists: XCTestCase {
         lLRemoveDupes.save(data: "a")
         lLRemoveDupes.save(data: "c")
         lLRemoveDupes.save(data: "c")
-        lLRemoveDupes.removeDups()
+        lLRemoveDupes.removeDups(by: .iterating)
         let allData = getStringFrom(ll: lLRemoveDupes)
         let expectedResult = "abc"
         XCTAssertEqual(expectedResult, allData)
     }
 
+    // MARK: LLRemoveDupes - by hashTable
+    func test_LLRemoveDupes_hash() {
+        let lLRemoveDupes = LLRemoveDupes()
+        lLRemoveDupes.save(data: "a")
+        lLRemoveDupes.save(data: "b")
+        lLRemoveDupes.save(data: "c")
+        lLRemoveDupes.removeDups(by: .hashTable)
+        let allData = getStringFrom(ll: lLRemoveDupes)
+        let expectedResult = "abc"
+        XCTAssertEqual(expectedResult, allData)
+    }
+    
+    func test_LLRemoveDupes2_hash() {
+        let lLRemoveDupes = LLRemoveDupes()
+        lLRemoveDupes.save(data: "a")
+        lLRemoveDupes.save(data: "b")
+        lLRemoveDupes.save(data: "c")
+        lLRemoveDupes.save(data: "c")
+        lLRemoveDupes.removeDups(by: .hashTable)
+        let allData = getStringFrom(ll: lLRemoveDupes)
+        let expectedResult = "abc"
+        XCTAssertEqual(expectedResult, allData)
+    }
+  
+    func test_LLRemoveDupes2a_hash() {
+        let lLRemoveDupes = LLRemoveDupes()
+        lLRemoveDupes.save(data: "a")
+        lLRemoveDupes.save(data: "b")
+        lLRemoveDupes.save(data: "c")
+        lLRemoveDupes.save(data: "c")
+        lLRemoveDupes.save(data: "c")
+        lLRemoveDupes.removeDups(by: .hashTable)
+        let allData = getStringFrom(ll: lLRemoveDupes)
+        let expectedResult = "abc"
+        XCTAssertEqual(expectedResult, allData)
+    }
+    
+    func test_LLRemoveDupes3_hash() {
+        let lLRemoveDupes = LLRemoveDupes()
+        lLRemoveDupes.save(data: "a")
+        lLRemoveDupes.save(data: "b")
+        lLRemoveDupes.save(data: "b")
+        lLRemoveDupes.save(data: "b")
+        lLRemoveDupes.save(data: "b")
+        lLRemoveDupes.save(data: "c")
+        lLRemoveDupes.save(data: "c")
+        lLRemoveDupes.removeDups(by: .hashTable)
+        let allData = getStringFrom(ll: lLRemoveDupes)
+        let expectedResult = "abc"
+        XCTAssertEqual(expectedResult, allData)
+    }
+    
+    func test_LLRemoveDupes4_hash() {
+        let lLRemoveDupes = LLRemoveDupes()
+        lLRemoveDupes.save(data: "a")
+        lLRemoveDupes.save(data: "b")
+        lLRemoveDupes.save(data: "b")
+        lLRemoveDupes.save(data: "b")
+        lLRemoveDupes.save(data: "a")
+        lLRemoveDupes.save(data: "c")
+        lLRemoveDupes.save(data: "c")
+        lLRemoveDupes.removeDups(by: .hashTable)
+        let allData = getStringFrom(ll: lLRemoveDupes)
+        let expectedResult = "abc"
+        XCTAssertEqual(expectedResult, allData)
+    }
+
+    
     
     
 
