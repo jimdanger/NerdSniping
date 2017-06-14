@@ -30,7 +30,11 @@ class LLRemoveDupes: LinkedList {
         }        
     }
     
+    
+    
+    
     var hashTableArray = [LinkedList?](repeating: nil, count: 100)
+    //  runtime: O(N)
     private func removeDupsbyHashTable(){
         
         
@@ -72,6 +76,7 @@ class LLRemoveDupes: LinkedList {
         return false
     }
     
+    // runtime: O(N^2)
     func saveToHashTable (data: LinkedList.T) {
         let h = hash(s: data)
         if hashTableArray[h] == nil {
