@@ -301,22 +301,18 @@ class Tests_Ctci_LinkedLists: XCTestCase {
         
         let partitioned = head.partition(head: head, point: 5)
         
-        var s1 = ""
-        var n1: LLPartition? = head
+        var result = ""
+        var n1: LLPartition? = partitioned
         while n1 != nil {
-            s1.append("\(n1?.data)")
+            let number:Int = n1!.data!
+            result.append("\(number)")
             n1 = n1?.next
         }
-        
-        var s2 = ""
-        var n2: LLPartition? = head
-        while n2 != nil {
-            s2.append("\(n2?.data)")
-            n2 = n2?.next
-        }
+    
+        let expectedResult = "32158510"
         
         
-        XCTAssertEqual(s1, s2)
+        XCTAssertEqual(result, expectedResult)
 
         
         

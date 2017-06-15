@@ -69,7 +69,7 @@ class LLPartition { // not conforming to LinkedList b/c that expects string type
             n = n?.next
         }
         n?.next = righthead
-        return n
+        return lefthead
     }
     
     func saveToLL(head: LLPartition, data: Int) {
