@@ -165,8 +165,61 @@ class Tests_Ctci_LinkedLists: XCTestCase {
         XCTAssertEqual(expectedResult, allData)
     }
 
+    // MARK: LLReturnKthToLast - getKthToLast
     
+    func test_LLReturnKthToLast_getKthToLast_returnsNextToLast() {
+        let ll = LLReturnKthToLast()
+        ll.save(data: "a")
+        ll.save(data: "b")
+        ll.save(data: "c")
+        ll.save(data: "d")
+        ll.save(data: "e")
+        ll.save(data: "f")
+        
+        let result = ll.getKthToLast(k: 1)?.data
+        let expectedResult = "e"
+        XCTAssertEqual(expectedResult, result)
+    }
     
+    func test_LLReturnKthToLast_getKthToLast_returns3rdToLast() {
+        let ll = LLReturnKthToLast()
+        ll.save(data: "a")
+        ll.save(data: "b")
+        ll.save(data: "c")
+        ll.save(data: "d")
+        ll.save(data: "e")
+        ll.save(data: "f")
+        
+        let result = ll.getKthToLast(k: 3)?.data
+        let expectedResult = "c"
+        XCTAssertEqual(expectedResult, result)
+    }
+
+    func test_LLReturnKthToLast_getKthToLast_returnsNil() {
+        let ll = LLReturnKthToLast()
+        ll.save(data: "a")
+        ll.save(data: "b")
+        ll.save(data: "c")
+        ll.save(data: "d")
+        ll.save(data: "e")
+        ll.save(data: "f")
+        let result = ll.getKthToLast(k: 20)?.data
+        XCTAssertNil(result)
+    }
+    
+    func test_LLReturnKthToLast_getKthToLast_returnsLast() {
+        let ll = LLReturnKthToLast()
+        ll.save(data: "a")
+        ll.save(data: "b")
+        ll.save(data: "c")
+        ll.save(data: "d")
+        ll.save(data: "e")
+        ll.save(data: "f")
+        let result = ll.getKthToLast(k: 0)?.data
+        let expectedResult = "f"
+        XCTAssertEqual(expectedResult, result)
+    }
+
     
 
    

@@ -21,7 +21,7 @@
 
 class LLReturnKthToLast: LinkedList {
     
-    func getKthToLast(k: Int) -> LinkedListNode {
+    func getKthToLast(k: Int) -> LinkedListNode? {
         
         /* Whiteboard:
             - iterate through once to count, and again to find Kth to last. O(N^2)
@@ -37,14 +37,34 @@ class LLReturnKthToLast: LinkedList {
          
             - hmmm...
          
-            - As I advance through the LL, I could keep track of the node that is k behind the current position. Then, when I get to the end, we can instantly return that node.
+            - As I advance through the LL, I could keep track of the node that is k behind the current position. Then, when we get to the end, we can instantly return that node.
                 - This one is the winner. this is O(N), might be hard to do better.
          
         
         */
         
         
-        
+        var thisNode = headNode
+        var kthBehind: LinkedListNode? = nil
+        var i = 0
+        var thisNodeIsKAheadOfHead = false
+        while thisNode != nil {
+            
+            if thisNodeIsKAheadOfHead {
+                kthBehind = kthBehind?.nextNode
+            }
+            
+            if i == k {
+                thisNodeIsKAheadOfHead = true
+                kthBehind = headNode
+            }
+            
+            i += 1
+            thisNode = thisNode?.nextNode
+
+        }
+        return kthBehind
+
     }
     
     
