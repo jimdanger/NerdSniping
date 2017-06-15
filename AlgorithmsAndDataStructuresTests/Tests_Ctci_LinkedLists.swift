@@ -221,7 +221,7 @@ class Tests_Ctci_LinkedLists: XCTestCase {
     }
 
     
-    // MARK: LinkedList - Equatable  // TODO: move this to another test file. 
+    // MARK: LinkedList - Equatable  // TODO: move this to another test file.
     
     func test_LinkedList_Equatable_equal() {
         let ll1 = LinkedList()
@@ -289,6 +289,38 @@ class Tests_Ctci_LinkedLists: XCTestCase {
     }
     
     // MARK: LLPartition - partition
+    func test_LLPartition() {
+        let head = LLPartition(data: 3)
+        head.saveToLL(head: head, data: 5)
+        head.saveToLL(head: head, data: 8)
+        
+        head.saveToLL(head: head, data: 5)
+        head.saveToLL(head: head, data: 10)
+        head.saveToLL(head: head, data: 2)
+        head.saveToLL(head: head, data: 1)
+        
+        let partitioned = head.partition(head: head, point: 5)
+        
+        var s1 = ""
+        var n1: LLPartition? = head
+        while n1 != nil {
+            s1.append("\(n1?.data)")
+            n1 = n1?.next
+        }
+        
+        var s2 = ""
+        var n2: LLPartition? = head
+        while n2 != nil {
+            s2.append("\(n2?.data)")
+            n2 = n2?.next
+        }
+        
+        
+        XCTAssertEqual(s1, s2)
+
+        
+        
+    }
 
 
    
