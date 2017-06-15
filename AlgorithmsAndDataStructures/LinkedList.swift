@@ -6,7 +6,7 @@
 //  Copyright © 2017 Jim Danger, LLC. All rights reserved.
 //
 
-public class LinkedList {
+public class LinkedList: Equatable {
     typealias T = LinkedListNode.T
     
     var headNode: LinkedListNode?
@@ -74,4 +74,26 @@ public class LinkedList {
         }
         return nil
     }
+    
+    public static func ==(lhs: LinkedList, rhs: LinkedList) -> Bool {
+   
+        let l = lhs.getString()
+        let r = rhs.getString()
+        
+        return l == r
+    }
+    
+    func getString() -> String {
+        var string = ""
+        var node = headNode
+        while node != nil {
+            if let s = node?.data {
+                string.append(s)
+            }
+            node = node?.nextNode
+        }
+        return string
+        
+    }
+    
 }

@@ -221,6 +221,73 @@ class Tests_Ctci_LinkedLists: XCTestCase {
     }
 
     
+    // MARK: LinkedList - Equatable
+    
+    func test_LinkedList_Equatable_equal() {
+        let ll1 = LinkedList()
+        ll1.save(data: "a")
+        ll1.save(data: "b")
+        
+        let ll2 = LinkedList()
+        ll2.save(data: "a")
+        ll2.save(data: "b")
+        
+        XCTAssertEqual(ll1, ll2)
+    }
+    
+    func test_LinkedList_Equatable_notEqual() {
+        let ll1 = LinkedList()
+        ll1.save(data: "a")
+        
+        let ll2 = LinkedList()
+        ll2.save(data: "a")
+        ll2.save(data: "b")
+        
+        XCTAssertNotEqual(ll1, ll2)
+    }
+    
+    func test_LinkedList_Equatable_notEqual_Empty() {
+        let ll1 = LinkedList()
+        ll1.save(data: "a")
+        
+        let ll2 = LinkedList()
+        
+        XCTAssertNotEqual(ll1, ll2)
+    }
+    
+    func test_LinkedList_Equatable_Equal_Empty() {
+        let ll1 = LinkedList()
+        let ll2 = LinkedList()
+        XCTAssertEqual(ll1, ll2)
+    }
+    
+    
+    // MARK: LLDeleteMiddleNode - deleteMiddleNode
+
+    func test_LLDeleteMiddleNode() {
+        let ll = LLDeleteMiddleNode()
+        ll.save(data: "a")
+        ll.save(data: "b")
+        ll.save(data: "c")
+        ll.save(data: "d")
+        ll.save(data: "e")
+        ll.save(data: "f")
+        
+        let nodeTodelete:LinkedListNode = ll.getKthToLast(k: 3)!
+        ll.deleteMiddleNode(node: nodeTodelete)
+        
+        let expectedresult = LLDeleteMiddleNode()
+        expectedresult.save(data: "a")
+        expectedresult.save(data: "b")
+        expectedresult.save(data: "d")
+        expectedresult.save(data: "e")
+        expectedresult.save(data: "f")
+        
+        print(ll.getString())
+        XCTAssertEqual(ll, expectedresult)
+        
+    }
+    
 
    
 
