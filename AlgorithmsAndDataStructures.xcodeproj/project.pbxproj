@@ -12,6 +12,7 @@
 		380F65FE1EEF581500ABCE96 /* StringCompresser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F65FD1EEF581500ABCE96 /* StringCompresser.swift */; };
 		380F66001EF0095100ABCE96 /* LLRemoveDupes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F65FF1EF0095100ABCE96 /* LLRemoveDupes.swift */; };
 		380F66031EF009FB00ABCE96 /* Tests_Ctci_LinkedLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F66021EF009FB00ABCE96 /* Tests_Ctci_LinkedLists.swift */; };
+		3831E4E41EF3FEF40076FC1F /* LLSumLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3831E4E31EF3FEF40076FC1F /* LLSumLists.swift */; };
 		383662C81EF1625600D38FED /* LLReturnKthToLast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383662C71EF1625600D38FED /* LLReturnKthToLast.swift */; };
 		3863EEBD1EE9771D00C17051 /* IsUnique.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3863EEBC1EE9771D00C17051 /* IsUnique.swift */; };
 		3863EEC01EE9780A00C17051 /* README_ctci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3863EEBF1EE9780A00C17051 /* README_ctci.swift */; };
@@ -62,6 +63,7 @@
 		380F65FD1EEF581500ABCE96 /* StringCompresser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringCompresser.swift; sourceTree = "<group>"; };
 		380F65FF1EF0095100ABCE96 /* LLRemoveDupes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLRemoveDupes.swift; sourceTree = "<group>"; };
 		380F66021EF009FB00ABCE96 /* Tests_Ctci_LinkedLists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests_Ctci_LinkedLists.swift; sourceTree = "<group>"; };
+		3831E4E31EF3FEF40076FC1F /* LLSumLists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLSumLists.swift; sourceTree = "<group>"; };
 		383662C71EF1625600D38FED /* LLReturnKthToLast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLReturnKthToLast.swift; sourceTree = "<group>"; };
 		3863EEBC1EE9771D00C17051 /* IsUnique.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsUnique.swift; sourceTree = "<group>"; };
 		3863EEBF1EE9780A00C17051 /* README_ctci.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = README_ctci.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				383662C71EF1625600D38FED /* LLReturnKthToLast.swift */,
 				38E4511E1EF2AC4C00D61EB3 /* LLDeleteMiddleNode.swift */,
 				38E451201EF2B5A800D61EB3 /* LLPartition.swift */,
+				3831E4E31EF3FEF40076FC1F /* LLSumLists.swift */,
 			);
 			name = LinkedLists;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				38F47D7A1EB3A41000DC7B15 /* Kata04DataMunging.swift in Sources */,
 				3863EEC71EEA0D6A00C17051 /* StringPermutationChecker.swift in Sources */,
 				3863EECB1EEABE2300C17051 /* PalindromePermutationChecker.swift in Sources */,
+				3831E4E41EF3FEF40076FC1F /* LLSumLists.swift in Sources */,
 				38F47D821EB3A76A00DC7B15 /* Kata04Errors.swift in Sources */,
 				38F47D861EB951EB00DC7B15 /* PartOneWeatherData.swift in Sources */,
 				3863EEC01EE9780A00C17051 /* README_ctci.swift in Sources */,
