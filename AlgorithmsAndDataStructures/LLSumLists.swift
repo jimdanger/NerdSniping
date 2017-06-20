@@ -49,13 +49,14 @@ class LLSumLists {
         var carry: Int?
         var placeDivider: Int = 10
         var resultNodeInFocus: LLSumLists?
-        while node1 != nil && node2 != nil {
+        while (node1 != nil && node2 != nil) {
             
             let d1:Int = node1?.data ?? 0
             let d2:Int = node2?.data ?? 0
             let c:Int = carry ?? 0
             let rawsum = d1 + d2 + c
             let digit = rawsum % 10
+            
             carry = rawsum / placeDivider
             
             if resultHead == nil {
@@ -70,6 +71,12 @@ class LLSumLists {
             node1 = node1?.next
             node2 = node2?.next
         }
+        if let unwrappedCarry = carry {
+            if unwrappedCarry != 0 {
+                resultNodeInFocus?.next = LLSumLists(data: unwrappedCarry)
+            }
+        }
+        
         
         return resultHead
     }

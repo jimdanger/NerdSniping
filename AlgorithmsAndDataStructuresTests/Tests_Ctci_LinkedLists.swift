@@ -339,10 +339,32 @@ class Tests_Ctci_LinkedLists: XCTestCase {
         
         
         XCTAssertEqual(result, expectedResult)
-        
-        
-        
     }
+    
+    func test_LLSumLists_carryOverToANewColumn() {
+        let instance = LLSumLists(data: 0)
+        
+        let h1 = LLSumLists(data: 7)
+        h1.next = LLSumLists(data: 1)
+        h1.next?.next = LLSumLists(data: 9)
+        
+        let h2 = LLSumLists(data: 5)
+        h2.next = LLSumLists(data: 9)
+        h2.next?.next = LLSumLists(data: 9)
+        
+        var llresult = instance.sum(x: h1, y: h2)
+        var result = ""
+        while llresult != nil {
+            let number:Int = llresult!.data
+            result.append("\(number)")
+            llresult = llresult?.next
+        }
+        let expectedResult = "2191"
+        
+        
+        XCTAssertEqual(result, expectedResult)
+    }
+
 
 
    
