@@ -1,5 +1,5 @@
 //
-//  Tests_Ctci_StacksQueues.swift
+//  Tests_StackOfPlates.swift
 //  AlgorithmsAndDataStructures
 //
 //  Created by Jim Wilson on 6/21/17.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import AlgorithmsAndDataStructures
 
-class Tests_Ctci_StacksQueues: XCTestCase {
+class Tests_StackOfPlates: XCTestCase {
 
     override func setUp() {
         super.setUp()
