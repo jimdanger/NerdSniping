@@ -20,7 +20,7 @@
 
 class LoveLetterChecker {
     
-    
+    // Using loops: O(n^2)  -> Technically, this is O(l*n), where l = letter.characters.count and n = newspaper.characters.count
     public func canBeWrittenEntirelyFrom(letter: String, newspaper: String) -> Bool {
         var loveLetter = letter
         
@@ -32,6 +32,9 @@ class LoveLetterChecker {
                     
                     let stringIndex = loveLetter.characters.index(loveLetter.startIndex, offsetBy: i)
                     loveLetter.characters.remove(at: stringIndex)
+                    
+                    
+                    // from swift cheatsheet:
                     
 //                    let word1 = "ABCDEF"
 //                    let word2 = "012345"
@@ -51,7 +54,7 @@ class LoveLetterChecker {
     }
     
     
-    
+    // Using hash:  O(l + n)
     public func canBeWrittenEntirelyFrom2(letter: String, newspaper: String) -> Bool {
         let kNumberOfAsciiChars = 128
         var hashArray: [Int] = []
@@ -81,8 +84,7 @@ class LoveLetterChecker {
 
 extension Character {
     func asciiKeyValue() -> Int {
-        // switch statement on values.
-        return 0
+        return Int((String(self).unicodeScalars.filter{$0.isASCII}.first?.value)!)
     }
 }
 
