@@ -29,6 +29,21 @@ class BinarySearchTree {
     }
 
     
+    func asdf () {
+        let numoflines = 5
+        
+        for _ in 1...numoflines {
+          _ = readLine()!.characters.split(separator: " ").map{ Int(String($0))! }
+        }
+    }
+    
+//    for i in 1...numoflines {
+//
+//    }
+    
+    
+    
+    
     // MARK:- Put
     func put (value: Int) {
         let newNode = BstNode(value: value)

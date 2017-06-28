@@ -34,7 +34,8 @@ class LoveLetterChecker {
                     loveLetter.characters.remove(at: stringIndex)
                     
                     
-                    // from swift cheatsheet:
+                    // from swift cheatsheet: https://useyourloaf.com/blog/swift-string-cheat-sheet/ 
+                    
                     
 //                    let word1 = "ABCDEF"
 //                    let word2 = "012345"
