@@ -12,7 +12,7 @@ Nerd Sniping
 </p>
 <sub><sup>Source: https://xkcd.com/356/ </sub></sup>
 
-* [explainxkcd.com](http://explainxkcd.com/wiki/index.php/356:_Nerd_Sniping) explained the above comic by stating, "Nerds have a way of getting distracted easily and focusing on one thing and ignoring the rest, when they feel their specific skills are challenged by an interesting problem."
+* [Explainxkcd.com](http://explainxkcd.com/wiki/index.php/356:_Nerd_Sniping) explained the above comic by stating, "Nerds have a way of getting distracted easily and focusing on one thing and ignoring the rest, when they feel their specific skills are challenged by an interesting problem."
 
 * We've all been there. :grinning:
 
@@ -38,7 +38,12 @@ Nerd Sniping
 
 ## Explore
 * This project is organized into logical classes and subdirectories.
-* If you are looking for a starting point, I recommend `CommonLogic -> Katas -> CodeKata -> Kata04DataMunging -> PartOneWeatherData.swift` :umbrella: or the Unit Test, `Tests_BinarySearchTree.swift` :evergreen_tree:
+* Looking for a starting point? I recommend:
+  * `CommonLogic -> Katas -> Misc -> LoveLetterChecker.swift` :love_letter:
+  * And the accompanying Unit Tests, `Tests_LoveLetterChecker`.
+  * Or also, explore `Tests_BinarySearchTree.swift` :evergreen_tree:
+
 
 ## Contribute
-* There are no doubt more elegant solutions to some of my problems. Feel free to contribute freely with improvements or questions.
+* There are no doubt more elegant solutions to some of my problems.
+* Feel free to open an issue with improvement-suggestions or questions. 
