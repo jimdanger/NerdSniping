@@ -14,15 +14,15 @@ class Tests_LoveLetterChecker: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
 
     
+    
+    // MARK: - Tests of brute-force solution; nested for-loops
     func test_loveLetterChecker_shouldPass(){
         let checker = LoveLetterChecker()
         let letter = "abc"
@@ -59,8 +59,11 @@ class Tests_LoveLetterChecker: XCTestCase {
         XCTAssertFalse(result)
     }
     
-    // MARK: - useing hash instead of nested for loops
-   
+    
+    
+    
+    // MARK: - Tests of hashtable solution, instead of nested for-loops
+    
     func test_loveLetterChecker_shouldPass_hash(){
         let checker = LoveLetterChecker()
         let letter = "abc"
@@ -105,9 +108,4 @@ class Tests_LoveLetterChecker: XCTestCase {
         let result = checker.canBeWrittenEntirelyFrom2(letter: letter, newspaper: newspaper)
         XCTAssertFalse(result)
     }
-    
-    
-    
-    
-    
 }

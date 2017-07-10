@@ -20,30 +20,17 @@
 
 class LoveLetterChecker {
     
-    // Using loops: O(n^2)  -> Technically, this is O(l*n), where l = letter.characters.count and n = newspaper.characters.count
+    // Using loops. Running time: O(n^2)  -> Technically, this is O(l*n), where l = letter.characters.count and n = newspaper.characters.count
     public func canBeWrittenEntirelyFrom(letter: String, newspaper: String) -> Bool {
         var loveLetter = letter
         
         for newschar in newspaper.characters {
-            
             
             for (i, letterchar) in loveLetter.characters.enumerated() {
                 if newschar == letterchar {
                     
                     let stringIndex = loveLetter.characters.index(loveLetter.startIndex, offsetBy: i)
                     loveLetter.characters.remove(at: stringIndex)
-                    
-                    
-                    // from swift cheatsheet: https://useyourloaf.com/blog/swift-string-cheat-sheet/ 
-                    
-                    
-//                    let word1 = "ABCDEF"
-//                    let word2 = "012345"
-//                    if let indexC = word1.characters.index(of: "C") {
-//                        let distance = word1.distance(from: word1.startIndex, to: indexC) // 2
-//                        let digit = word2[word2.index(word2.startIndex, offsetBy: distance)]    // "2"
-//                    }
-                    
                     
                 }
                 if loveLetter.characters.count == 0  {
@@ -54,13 +41,12 @@ class LoveLetterChecker {
         return false 
     }
     
-    
-    // Using hash:  O(l + n)
+    // Another implementation, using a hashTable.  Running time: O(n)  -> Technically, O(l+n)
     public func canBeWrittenEntirelyFrom2(letter: String, newspaper: String) -> Bool {
         let kNumberOfAsciiChars = 128
         var hashArray: [Int] = []
         
-        for i in 0..<kNumberOfAsciiChars {
+        for _ in 0..<kNumberOfAsciiChars {
             hashArray.append(0)
         }
         
@@ -68,18 +54,17 @@ class LoveLetterChecker {
             let value = nChar.asciiKeyValue()
             hashArray[value] += 1
         }
-    
-    
-    for lChar in letter.characters {
-    
-        let value = lChar.asciiKeyValue()
-        if   hashArray[value] == 0 {
-            return false
-        } else {
-            hashArray[value] -= 1
+        
+        
+        for lChar in letter.characters {
+            let value = lChar.asciiKeyValue()
+            if   hashArray[value] == 0 {
+                return false
+            } else {
+                hashArray[value] -= 1
+            }
         }
-    }
-    return true
+        return true
     }
 }
 
