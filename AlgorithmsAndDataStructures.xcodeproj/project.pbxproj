@@ -44,6 +44,7 @@
 		3881AEC21E917D3000FCB71F /* Tests_Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881AEC11E917D3000FCB71F /* Tests_Queue.swift */; };
 		3881AEC61E91BCFC00FCB71F /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881AEC51E91BCFC00FCB71F /* BinarySearchTree.swift */; };
 		3881AEC91E92A16100FCB71F /* Tests_BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3881AEC81E92A16100FCB71F /* Tests_BinarySearchTree.swift */; };
+		38C1EF691F179A43003B6D62 /* MinimalTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C1EF681F179A43003B6D62 /* MinimalTree.swift */; };
 		38E4511F1EF2AC4C00D61EB3 /* LLDeleteMiddleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E4511E1EF2AC4C00D61EB3 /* LLDeleteMiddleNode.swift */; };
 		38E451211EF2B5A800D61EB3 /* LLPartition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E451201EF2B5A800D61EB3 /* LLPartition.swift */; };
 		38F47D7A1EB3A41000DC7B15 /* Kata04DataMunging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F47D791EB3A41000DC7B15 /* Kata04DataMunging.swift */; };
@@ -108,6 +109,7 @@
 		3881AEC11E917D3000FCB71F /* Tests_Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests_Queue.swift; sourceTree = "<group>"; };
 		3881AEC51E91BCFC00FCB71F /* BinarySearchTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		3881AEC81E92A16100FCB71F /* Tests_BinarySearchTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests_BinarySearchTree.swift; sourceTree = "<group>"; };
+		38C1EF681F179A43003B6D62 /* MinimalTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinimalTree.swift; sourceTree = "<group>"; };
 		38E4511E1EF2AC4C00D61EB3 /* LLDeleteMiddleNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLDeleteMiddleNode.swift; sourceTree = "<group>"; };
 		38E451201EF2B5A800D61EB3 /* LLPartition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLPartition.swift; sourceTree = "<group>"; };
 		38F47D791EB3A41000DC7B15 /* Kata04DataMunging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kata04DataMunging.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				38144C901F1643F10058E840 /* RouteBetweenNodes.swift */,
+				38C1EF681F179A43003B6D62 /* MinimalTree.swift */,
 			);
 			name = TreesAndGraphs;
 			sourceTree = "<group>";
@@ -516,6 +519,7 @@
 				3881AEC61E91BCFC00FCB71F /* BinarySearchTree.swift in Sources */,
 				3815D50A1F027B13008AE0C2 /* LoveLetterChecker.swift in Sources */,
 				3881AEBF1E917C0D00FCB71F /* QueueNode.swift in Sources */,
+				38C1EF691F179A43003B6D62 /* MinimalTree.swift in Sources */,
 				3881AEB81E91750200FCB71F /* StackNode.swift in Sources */,
 				38240A761EFA94C100A491C8 /* StackOfPlates.swift in Sources */,
 				38F47D891EB9588C00DC7B15 /* Kata04Day.swift in Sources */,
