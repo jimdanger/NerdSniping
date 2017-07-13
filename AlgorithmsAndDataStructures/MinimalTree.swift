@@ -39,6 +39,10 @@ class MinimalTree {
             return nil
         }
         
+        if array.count == 1 {
+            return MinTreeNode(data: array[0])
+        }
+        
         let middleIndex = findMiddleIndex(array: array)
         let result = MinTreeNode(data: array[middleIndex])
         
