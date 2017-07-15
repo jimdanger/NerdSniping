@@ -19,9 +19,14 @@ import Foundation
 
 class DepthLLTreeNode {
     
-    var data: Int?
+    var data: Int
     var left: DepthLLTreeNode?
     var right: DepthLLTreeNode?
+    
+    init (data: Int){
+        self.data = data
+    }
+    
 }
 
 
@@ -35,8 +40,7 @@ class DepthLLNode: DepthLLTreeNode {
     
     init(treeNode: DepthLLTreeNode, level: Int) {
         self.level = level
-        super.init()
-        self.data = treeNode.data
+        super.init(data:treeNode.data)
         self.left = treeNode.left
         self.right = treeNode.right
     }
@@ -55,27 +59,28 @@ class ListOfDepthsFactory {
         
         queue.add(node: nodeInFocus)
         
-        while !queue.isEmpty() {
+        while queue.peak() != nil {
             
-            processFirstNode(node: queue.peakAndPop()!)
+            let nodeNowInFocus = queue.peakAndPop()
+            processFirstNode(node: nodeNowInFocus!)
             
-            if  nodeInFocus.left != nil {
+            if  nodeNowInFocus?.left != nil {
                 let left: DepthLLNode = DepthLLNode(treeNode: nodeInFocus.left!, level: nodeInFocus.level + 1)
                 queue.add(node: left)
             }
             
-            if  nodeInFocus.right != nil {
+            if  nodeNowInFocus?.right != nil {
                 let right: DepthLLNode = DepthLLNode(treeNode: nodeInFocus.right!, level: nodeInFocus.level + 1)
                 queue.add(node: right)
             }
+            
+            
         }
         return result
     }
     
     
     func processFirstNode(node: DepthLLNode){
-        
-        
         if let head = result[node.level] {
             node.next = head
         }
@@ -105,8 +110,12 @@ class DepthLLQueue {
         return nodeToReturn
     }
     
+    func peak() -> DepthLLNode? {
+        return self.first
+    }
+    
     func isEmpty() -> Bool {
-        return first != nil
+        return first == nil ? true : false 
     }
 }
 
