@@ -25,13 +25,10 @@ class CBNode {
     
     init(data: Int){
         self.data = data
-        
     }
-    
 }
 
 class CheckBalanced {
-    
     
     func isBalanced(root: CBNode) -> Bool {
         if root.left == nil && root.right == nil {

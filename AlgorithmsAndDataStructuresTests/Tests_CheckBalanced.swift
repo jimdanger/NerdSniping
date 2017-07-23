@@ -18,8 +18,7 @@ class Tests_CheckBalanced: XCTestCase {
     override func tearDown() {
         super.tearDown()
     }
-
-
+ 
     func test_height() {
         let x = CheckBalanced()
         let root = CBNode(data: 0)
@@ -44,7 +43,6 @@ class Tests_CheckBalanced: XCTestCase {
         XCTAssertEqual(x.height(node: root), 3)
     }
     
-    
     func test_isBalanced() {
         
         let x = CheckBalanced()
@@ -55,8 +53,5 @@ class Tests_CheckBalanced: XCTestCase {
         root.left?.left = rootleftleft
         
         XCTAssertFalse(x.isBalanced(root: root))
-       
-
     }
-
 }

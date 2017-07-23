@@ -26,7 +26,6 @@ class DepthLLTreeNode {
     init (data: Int){
         self.data = data
     }
-    
 }
 
 
@@ -45,7 +44,6 @@ class DepthLLNode: DepthLLTreeNode {
         self.right = treeNode.right
     }
 }
-
 
 class ListOfDepthsFactory {
     
@@ -73,12 +71,9 @@ class ListOfDepthsFactory {
                 let right: DepthLLNode = DepthLLNode(treeNode: nodeInFocus.right!, level: nodeInFocus.level + 1)
                 queue.add(node: right)
             }
-            
-            
         }
         return result
     }
-    
     
     func processFirstNode(node: DepthLLNode){
         if let head = result[node.level] {

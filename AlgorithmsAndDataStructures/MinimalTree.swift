@@ -16,7 +16,6 @@ import Foundation
  
  */
 
-
 class MinTreeNode {
     var data: Int
     var left: MinTreeNode?
