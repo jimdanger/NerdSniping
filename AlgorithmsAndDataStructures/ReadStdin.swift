@@ -20,6 +20,55 @@ For this example:
 
 */
 
+class StdinReader {
+    func read (){
+        let line1 = readLine()
+        let line2 = readLine()
+        let line3 = readLine()
+        
+        let count: Int = Int(line1!)!
+        print(count)
+        
+        let string: String = line2!
+        print(string)
+        
+    }
+    
+}
+
+
+import Foundation
+
+class ReadStdin2 {
+    class func read () -> (s: String, c: Int){
+        let line1 = readLine()
+        let line2 = readLine()
+        
+        let count: Int = Int(line1!)!
+        print(count)
+        
+        let string: String = line2!
+        print(string)
+        for (index, char) in string.characters.enumerated() {
+            print(index)
+            print(char)
+        }
+        return (string, count)
+    }
+}
+
+
+/*
+let toup = ReadStdin.read()
+let string: String = toup.s
+print(string)
+let count: String = toup.c
+print(count)
+
+
+print(toup)
+*/
+
 
 class ReadStdin {
     
@@ -44,5 +93,11 @@ class ReadStdin {
         print(n) // 5
         print(d) // 4
         print(array) // [1, 2, 3, 4, 5]
+        
+//        let timeInLot: Date = carInTime.hours(from: outTime)
+        
     }
 }
+
+
+
